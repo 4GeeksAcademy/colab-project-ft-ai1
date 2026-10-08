@@ -388,9 +388,14 @@
         } else if (action === "increase") {
           quantityOutput.textContent = currentQuantity + 1;
           cartStatus.textContent = "Item quantity increased.";
-        } else if (action === "decrease" && currentQuantity > 1) {
-          quantityOutput.textContent = currentQuantity - 1;
-          cartStatus.textContent = "Item quantity decreased.";
+        } else if (action === "decrease") {
+          if (currentQuantity > 1) {
+            quantityOutput.textContent = currentQuantity - 1;
+            cartStatus.textContent = "Item quantity decreased.";
+          } else {
+            item.remove();
+            cartStatus.textContent = "Item removed from your bag.";
+          }
         } else {
           return;
         }
