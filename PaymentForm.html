@@ -255,38 +255,35 @@
 							<a href="/cart" class="rounded-[2px] text-xs font-medium uppercase tracking-[0.08em] text-[#76513D] underline decoration-[#D8D0C3] underline-offset-4 outline-none hover:text-[#283D32] focus-visible:ring-2 focus-visible:ring-[#283D32]">Edit bag</a>
 						</div>
 
-						<div id="checkout-items" class="divide-y divide-[#D8D0C3] border-b border-[#D8D0C3]"></div>
-						<template id="checkout-item-template">
-							<div class="flex gap-4 py-5">
-								<div class="relative h-28 w-24 shrink-0 overflow-hidden rounded-[2px] bg-[#E8DECD]">
-									<img data-checkout-image alt="" class="size-full object-cover" />
-									<span data-checkout-quantity class="absolute -right-1 -top-1 flex size-6 items-center justify-center rounded-full bg-[#283D32] text-xs text-white"></span>
-								</div>
-								<div class="flex min-w-0 flex-1 flex-col justify-between py-1">
-									<div>
-										<h3 data-checkout-name class="text-sm font-medium leading-5"></h3>
-										<p data-checkout-variant class="mt-1 text-xs leading-5 text-[#81796E]"></p>
-									</div>
-									<p data-checkout-line-total class="text-sm font-medium"></p>
-								</div>
+						<div class="flex gap-4 border-b border-[#D8D0C3] py-5">
+							<div class="relative h-28 w-24 shrink-0 overflow-hidden rounded-[2px] bg-[#E8DECD]">
+								<img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=320&q=80" alt="Cognac leather sandals" class="size-full object-cover" />
+								<span class="absolute -right-1 -top-1 flex size-6 items-center justify-center rounded-full bg-[#283D32] text-xs text-white" aria-label="Quantity: 1">1</span>
 							</div>
-						</template>
-						<p id="checkout-empty" class="hidden border-b border-[#D8D0C3] py-5 text-sm text-[#81796E]">Your bag is empty. <a href="/cart" class="text-[#76513D] underline underline-offset-4">Return to your bag</a></p>
+							<div class="flex min-w-0 flex-1 flex-col justify-between py-1">
+								<div>
+									<h3 class="text-sm font-medium leading-5">Leather sandals</h3>
+									<p class="mt-1 text-xs leading-5 text-[#81796E]">Cognac · Size 39</p>
+								</div>
+								<p class="text-sm font-medium">$168.00</p>
+							</div>
+						</div>
 
 						<dl class="space-y-3 border-b border-[#D8D0C3] py-5 text-sm">
-							<div class="flex justify-between gap-4"><dt class="text-[#81796E]">Subtotal</dt><dd id="checkout-subtotal" class="font-medium"></dd></div>
-							<div class="flex justify-between gap-4"><dt class="text-[#81796E]">Estimated tax (20%)</dt><dd id="checkout-tax" class="font-medium"></dd></div>
+							<div class="flex justify-between gap-4"><dt class="text-[#81796E]">Subtotal</dt><dd>$140.00</dd></div>
+							<div class="flex justify-between gap-4"><dt class="text-[#81796E]">VAT (20%, included)</dt><dd>$28.00</dd></div>
+							<div class="flex justify-between gap-4"><dt class="text-[#81796E]">Shipping</dt><dd class="text-[#283D32]">Free</dd></div>
 						</dl>
 
 						<div class="flex items-baseline justify-between gap-4 pt-5">
-							<p class="text-xs font-medium uppercase tracking-[0.1em]">Total <span class="ml-1 normal-case tracking-normal text-[#81796E]">EUR</span></p>
-							<p id="checkout-total" class="font-['Cormorant_Garamond',serif] text-3xl text-[#283D32]"></p>
+							<p class="text-xs font-medium uppercase tracking-[0.1em]">Total <span class="ml-1 normal-case tracking-normal text-[#81796E]">USD</span></p>
+							<p class="font-['Cormorant_Garamond',serif] text-3xl text-[#283D32]">$168.00</p>
 						</div>
-						<p class="mt-2 text-right text-xs text-[#81796E]">Shipping is not included in this preview.</p>
+						<p class="mt-2 text-right text-xs text-[#81796E]">Taxes included</p>
 
 						<div class="mt-6 flex items-start gap-3 border-t border-[#D8D0C3] pt-5 text-xs leading-5 text-[#81796E]">
 							<svg class="mt-0.5 size-4 shrink-0 text-[#283D32]" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7h11v11H3zM14 11h4l3 3v4h-7z"></path><circle cx="7.5" cy="19" r="1.5"></circle><circle cx="17.5" cy="19" r="1.5"></circle></svg>
-							Shipping details are collected above; shipping costs are not calculated in this preview.
+							Free delivery on this order. Estimated arrival in 3–5 business days.
 						</div>
 					</aside>
 				</div>
@@ -343,63 +340,5 @@
 			</div>
 		</footer>
 
-		<script>
-			const checkoutCurrency = new Intl.NumberFormat("fr-FR", { style: "currency", currency: "EUR" });
-			const checkoutStorageKey = "castanier-cart";
-			const checkoutItems = document.querySelector("#checkout-items");
-			const checkoutItemTemplate = document.querySelector("#checkout-item-template");
-			const checkoutEmpty = document.querySelector("#checkout-empty");
-
-			function loadCheckoutItems() {
-				try {
-					const savedItems = JSON.parse(localStorage.getItem(checkoutStorageKey) ?? "[]");
-					if (!Array.isArray(savedItems)) return [];
-
-					return savedItems.filter((item) => {
-						if (!item || typeof item !== "object") return false;
-						const price = Number(item.unitPriceCents);
-						const quantity = Number(item.quantity);
-						if (!item.name || !Number.isSafeInteger(price) || price < 0 || !Number.isSafeInteger(quantity) || quantity < 1) return false;
-
-						try {
-							const imageUrl = new URL(item.imageUrl, window.location.href);
-							return imageUrl.protocol === "http:" || imageUrl.protocol === "https:";
-						} catch {
-							return false;
-						}
-					});
-				} catch {
-					return [];
-				}
-			}
-
-			function renderCheckoutSummary() {
-				const items = loadCheckoutItems();
-				let subtotal = 0;
-
-				checkoutItems.replaceChildren(...items.map((item) => {
-					const row = checkoutItemTemplate.content.firstElementChild.cloneNode(true);
-					const image = row.querySelector("[data-checkout-image]");
-					image.src = new URL(item.imageUrl, window.location.href).href;
-					image.alt = item.imageAlt || item.name;
-					row.querySelector("[data-checkout-quantity]").textContent = String(item.quantity);
-					row.querySelector("[data-checkout-quantity]").setAttribute("aria-label", `Quantity: ${item.quantity}`);
-					row.querySelector("[data-checkout-name]").textContent = item.name;
-					row.querySelector("[data-checkout-variant]").textContent = [item.category, item.variant].filter(Boolean).join(" · ");
-					const lineTotal = Number(item.unitPriceCents) * Number(item.quantity);
-					subtotal += lineTotal;
-					row.querySelector("[data-checkout-line-total]").textContent = checkoutCurrency.format(lineTotal / 100);
-					return row;
-				}));
-
-				const tax = Math.round(subtotal * 0.2);
-				document.querySelector("#checkout-subtotal").textContent = checkoutCurrency.format(subtotal / 100);
-				document.querySelector("#checkout-tax").textContent = checkoutCurrency.format(tax / 100);
-				document.querySelector("#checkout-total").textContent = checkoutCurrency.format((subtotal + tax) / 100);
-				checkoutEmpty.classList.toggle("hidden", items.length > 0);
-			}
-
-			renderCheckoutSummary();
-		</script>
 	</body>
 </html>
