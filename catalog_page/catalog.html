@@ -124,7 +124,7 @@
           </p>
         </div>
 
-        <form class="mt-10 grid gap-4 border-y border-[#D8D0C3] py-6 sm:grid-cols-3 md:mt-12 md:max-w-4xl" aria-label="Catalog filters">
+        <form id="catalog-filters" class="mt-10 grid gap-4 border-y border-[#D8D0C3] py-6 sm:grid-cols-3 md:mt-12 md:max-w-4xl" aria-label="Catalog filters">
           <div>
             <label for="category-filter" class="block text-[13px] font-medium uppercase tracking-[0.12em] text-[#28241F]">Category</label>
             <select id="category-filter" name="category" class="mt-2 h-12 w-full rounded-[4px] border border-[#D8D0C3] bg-white px-4 text-sm text-[#28241F] outline-none focus:border-[#283D32] focus:ring-2 focus:ring-[#283D32]/20">
@@ -153,15 +153,18 @@
               <option value="xl">XL</option>
             </select>
           </div>
+          <button id="clear-filters" type="reset" class="hidden min-h-11 w-fit rounded-[4px] border border-[#283D32] px-5 text-[13px] font-medium uppercase tracking-[0.12em] text-[#283D32] outline-none transition-colors duration-200 hover:bg-[#283D32] hover:text-white focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-2 sm:col-span-3">
+            Clear filters
+          </button>
         </form>
 
         <div class="mt-8 flex items-center justify-between">
-          <p class="text-sm text-[#81796E]">20 pieces</p>
+          <p id="product-count" class="text-sm text-[#81796E]" aria-live="polite" aria-atomic="true">20 pieces</p>
           <p class="text-xs font-medium uppercase tracking-[0.12em] text-[#81796E]">Autumn edit</p>
         </div>
 
         <div class="mt-6 grid grid-cols-2 gap-x-4 gap-y-10 md:grid-cols-3 md:gap-x-6 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-12" aria-label="Products">
-          <article class="group" data-gender="women" data-category="pants" itemscope itemtype="https://schema.org/Product">
+          <article class="group" data-gender="women" data-category="pants" data-sizes="xs s m l" itemscope itemtype="https://schema.org/Product">
             <a href="/products/elise-wide-leg-trousers" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
               <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
                 <img src="assets/images/w-pants-elise.png" alt="Women's forest green élise wide-leg trousers" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" fetchpriority="high" itemprop="image" />
@@ -179,7 +182,7 @@
             </a>
           </article>
 
-          <article class="group" data-gender="women" data-category="pants" itemscope itemtype="https://schema.org/Product">
+          <article class="group" data-gender="women" data-category="pants" data-sizes="xs s m" itemscope itemtype="https://schema.org/Product">
             <a href="/products/margaux-tapered-trousers" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
               <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
                 <img src="assets/images/w-pants-margaux.png" alt="Women's chestnut margaux tapered trousers" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" fetchpriority="high" itemprop="image" />
@@ -197,7 +200,7 @@
             </a>
           </article>
 
-          <article class="group" data-gender="women" data-category="pants" itemscope itemtype="https://schema.org/Product">
+          <article class="group" data-gender="women" data-category="pants" data-sizes="s m l" itemscope itemtype="https://schema.org/Product">
             <a href="/products/camille-sailor-trousers" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
               <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
                 <img src="assets/images/w-pants-camille.png" alt="Women's warm beige camille sailor trousers" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" fetchpriority="high" itemprop="image" />
@@ -215,7 +218,7 @@
             </a>
           </article>
 
-          <article class="group" data-gender="women" data-category="pants" itemscope itemtype="https://schema.org/Product">
+          <article class="group" data-gender="women" data-category="pants" data-sizes="xs s m l xl" itemscope itemtype="https://schema.org/Product">
             <a href="/products/juliette-palazzo-trousers" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
               <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
                 <img src="assets/images/w-pants-juliette.png" alt="Women's dark espresso juliette palazzo trousers" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" fetchpriority="high" itemprop="image" />
@@ -233,7 +236,7 @@
             </a>
           </article>
 
-          <article class="group" data-gender="women" data-category="pants" itemscope itemtype="https://schema.org/Product">
+          <article class="group" data-gender="women" data-category="pants" data-sizes="s m l" itemscope itemtype="https://schema.org/Product">
             <a href="/products/leonie-utility-trousers" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
               <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
                 <img src="assets/images/w-pants-leonie.png" alt="Women's sage green léonie utility trousers" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" loading="lazy" itemprop="image" />
@@ -251,7 +254,7 @@
             </a>
           </article>
 
-          <article class="group" data-gender="men" data-category="pants" itemscope itemtype="https://schema.org/Product">
+          <article class="group" data-gender="men" data-category="pants" data-sizes="s m l xl" itemscope itemtype="https://schema.org/Product">
             <a href="/products/laurent-pleated-trousers" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
               <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
                 <img src="assets/images/m-pants-laurent.png" alt="Men's dark espresso laurent pleated trousers" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" loading="lazy" itemprop="image" />
@@ -269,7 +272,7 @@
             </a>
           </article>
 
-          <article class="group" data-gender="men" data-category="pants" itemscope itemtype="https://schema.org/Product">
+          <article class="group" data-gender="men" data-category="pants" data-sizes="s m l xl" itemscope itemtype="https://schema.org/Product">
             <a href="/products/etienne-linen-trousers" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
               <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
                 <img src="assets/images/m-pants-etienne.png" alt="Men's warm beige étienne linen trousers" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" loading="lazy" itemprop="image" />
@@ -287,7 +290,7 @@
             </a>
           </article>
 
-          <article class="group" data-gender="men" data-category="pants" itemscope itemtype="https://schema.org/Product">
+          <article class="group" data-gender="men" data-category="pants" data-sizes="m l xl" itemscope itemtype="https://schema.org/Product">
             <a href="/products/marcel-tailored-trousers" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
               <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
                 <img src="assets/images/m-pants-marcel.png" alt="Men's forest green marcel tailored trousers" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" loading="lazy" itemprop="image" />
@@ -305,7 +308,7 @@
             </a>
           </article>
 
-          <article class="group" data-gender="men" data-category="pants" itemscope itemtype="https://schema.org/Product">
+          <article class="group" data-gender="men" data-category="pants" data-sizes="s m l" itemscope itemtype="https://schema.org/Product">
             <a href="/products/theo-workwear-chinos" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
               <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
                 <img src="assets/images/m-pants-theo.png" alt="Men's chestnut théo workwear chinos" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" loading="lazy" itemprop="image" />
@@ -323,7 +326,7 @@
             </a>
           </article>
 
-          <article class="group" data-gender="men" data-category="pants" itemscope itemtype="https://schema.org/Product">
+          <article class="group" data-gender="men" data-category="pants" data-sizes="m l xl" itemscope itemtype="https://schema.org/Product">
             <a href="/products/gabriel-double-pleat-trousers" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
               <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
                 <img src="assets/images/m-pants-gabriel.png" alt="Men's muted taupe gabriel double-pleat trousers" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" loading="lazy" itemprop="image" />
@@ -341,7 +344,7 @@
             </a>
           </article>
 
-          <article class="group" data-gender="women" data-category="sweaters" itemscope itemtype="https://schema.org/Product">
+          <article class="group" data-gender="women" data-category="sweaters" data-sizes="xs s m" itemscope itemtype="https://schema.org/Product">
             <a href="/products/colette-mock-neck-sweater" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
               <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
                 <img src="assets/images/w-sweater-colette.png" alt="Women's sage green colette mock-neck sweater" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" loading="lazy" itemprop="image" />
@@ -359,7 +362,7 @@
             </a>
           </article>
 
-          <article class="group" data-gender="women" data-category="sweaters" itemscope itemtype="https://schema.org/Product">
+          <article class="group" data-gender="women" data-category="sweaters" data-sizes="s m l" itemscope itemtype="https://schema.org/Product">
             <a href="/products/fleur-cable-knit-sweater" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
               <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
                 <img src="assets/images/w-sweater-fleur.png" alt="Women's warm beige fleur cable-knit sweater" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" loading="lazy" itemprop="image" />
@@ -377,7 +380,7 @@
             </a>
           </article>
 
-          <article class="group" data-gender="women" data-category="sweaters" itemscope itemtype="https://schema.org/Product">
+          <article class="group" data-gender="women" data-category="sweaters" data-sizes="xs s m l" itemscope itemtype="https://schema.org/Product">
             <a href="/products/adele-wrap-cardigan" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
               <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
                 <img src="assets/images/w-sweater-adele.png" alt="Women's ivory adèle wrap cardigan" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" loading="lazy" itemprop="image" />
@@ -395,7 +398,7 @@
             </a>
           </article>
 
-          <article class="group" data-gender="men" data-category="sweaters" itemscope itemtype="https://schema.org/Product">
+          <article class="group" data-gender="men" data-category="sweaters" data-sizes="s m l xl" itemscope itemtype="https://schema.org/Product">
             <a href="/products/lucien-merino-crewneck" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
               <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
                 <img src="assets/images/m-sweater-lucien.png" alt="Men's forest green lucien merino crewneck" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" loading="lazy" itemprop="image" />
@@ -413,7 +416,7 @@
             </a>
           </article>
 
-          <article class="group" data-gender="men" data-category="sweaters" itemscope itemtype="https://schema.org/Product">
+          <article class="group" data-gender="men" data-category="sweaters" data-sizes="m l xl" itemscope itemtype="https://schema.org/Product">
             <a href="/products/bastien-half-zip-sweater" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
               <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
                 <img src="assets/images/m-sweater-bastien.png" alt="Men's dark espresso bastien half-zip sweater" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" loading="lazy" itemprop="image" />
@@ -431,7 +434,7 @@
             </a>
           </article>
 
-          <article class="group" data-gender="women" data-category="shirts" itemscope itemtype="https://schema.org/Product">
+          <article class="group" data-gender="women" data-category="shirts" data-sizes="xs s m l" itemscope itemtype="https://schema.org/Product">
             <a href="/products/claire-oversized-linen-shirt" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
               <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
                 <img src="assets/images/w-shirt-claire.png" alt="Women's ivory claire oversized linen shirt" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" loading="lazy" itemprop="image" />
@@ -449,7 +452,7 @@
             </a>
           </article>
 
-          <article class="group" data-gender="women" data-category="shirts" itemscope itemtype="https://schema.org/Product">
+          <article class="group" data-gender="women" data-category="shirts" data-sizes="xs s m" itemscope itemtype="https://schema.org/Product">
             <a href="/products/elodie-collarless-shirt" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
               <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
                 <img src="assets/images/w-shirt-elodie.png" alt="Women's sage green élodie collarless shirt" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" loading="lazy" itemprop="image" />
@@ -467,7 +470,7 @@
             </a>
           </article>
 
-          <article class="group" data-gender="men" data-category="shirts" itemscope itemtype="https://schema.org/Product">
+          <article class="group" data-gender="men" data-category="shirts" data-sizes="s m l xl" itemscope itemtype="https://schema.org/Product">
             <a href="/products/henri-oxford-shirt" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
               <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
                 <img src="assets/images/m-shirt-henri.png" alt="Men's ivory henri oxford shirt" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" loading="lazy" itemprop="image" />
@@ -485,7 +488,7 @@
             </a>
           </article>
 
-          <article class="group" data-gender="men" data-category="shirts" itemscope itemtype="https://schema.org/Product">
+          <article class="group" data-gender="men" data-category="shirts" data-sizes="s m l xl" itemscope itemtype="https://schema.org/Product">
             <a href="/products/jules-camp-collar-shirt" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
               <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
                 <img src="assets/images/m-shirt-jules.png" alt="Men's chestnut jules camp-collar shirt" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" loading="lazy" itemprop="image" />
@@ -503,7 +506,7 @@
             </a>
           </article>
 
-          <article class="group" data-gender="men" data-category="shirts" itemscope itemtype="https://schema.org/Product">
+          <article class="group" data-gender="men" data-category="shirts" data-sizes="m l xl" itemscope itemtype="https://schema.org/Product">
             <a href="/products/mathieu-band-collar-shirt" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
               <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
                 <img src="assets/images/m-shirt-mathieu.png" alt="Men's muted taupe mathieu band-collar shirt" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" loading="lazy" itemprop="image" />
@@ -522,6 +525,13 @@
           </article>
         </div>
 
+        <div id="no-results" class="mt-12 hidden border border-[#D8D0C3] bg-[#E8DECD]/40 px-6 py-12 text-center" role="status">
+          <h2 class="font-['Cormorant_Garamond',serif] text-3xl font-medium text-[#28241F]">No pieces found</h2>
+          <p class="mt-3 text-sm text-[#81796E]">Try another category, gender, or size.</p>
+          <button type="reset" form="catalog-filters" class="mt-6 min-h-11 rounded-[4px] border border-[#283D32] px-5 text-[13px] font-medium uppercase tracking-[0.12em] text-[#283D32] outline-none transition-colors duration-200 hover:bg-[#283D32] hover:text-white focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-2">
+            Clear filters
+          </button>
+        </div>
       </section>
     </main>
 
@@ -575,5 +585,93 @@
       </div>
     </footer>
 
+    <script>
+      (() => {
+        const form = document.querySelector("#catalog-filters");
+        const categoryFilter = document.querySelector("#category-filter");
+        const genderFilter = document.querySelector("#gender-filter");
+        const sizeFilter = document.querySelector("#size-filter");
+        const clearButton = document.querySelector("#clear-filters");
+        const productCount = document.querySelector("#product-count");
+        const noResults = document.querySelector("#no-results");
+        const productCards = [...document.querySelectorAll("[data-category][data-gender][data-sizes]")];
+
+        if (!form || !categoryFilter || !genderFilter || !sizeFilter) return;
+
+        const controls = {
+          category: categoryFilter,
+          gender: genderFilter,
+          size: sizeFilter
+        };
+
+        const loadFiltersFromUrl = () => {
+          const params = new URLSearchParams(window.location.search);
+
+          Object.entries(controls).forEach(([name, control]) => {
+            const value = params.get(name) || "";
+            const isValid = [...control.options].some((option) => option.value === value);
+            control.value = isValid ? value : "";
+          });
+        };
+
+        const updateUrl = () => {
+          const params = new URLSearchParams(window.location.search);
+
+          Object.entries(controls).forEach(([name, control]) => {
+            if (control.value) {
+              params.set(name, control.value);
+            } else {
+              params.delete(name);
+            }
+          });
+
+          const query = params.toString();
+          const url = query ? `${window.location.pathname}?${query}` : window.location.pathname;
+          window.history.replaceState(null, "", url);
+        };
+
+        const applyFilters = ({ syncUrl = true } = {}) => {
+          const category = categoryFilter.value;
+          const gender = genderFilter.value;
+          const size = sizeFilter.value;
+          let visibleCount = 0;
+
+          productCards.forEach((card) => {
+            const availableSizes = card.dataset.sizes.split(" ");
+            const matchesCategory = !category || card.dataset.category === category;
+            const matchesGender = !gender || card.dataset.gender === gender;
+            const matchesSize = !size || availableSizes.includes(size);
+            const isVisible = matchesCategory && matchesGender && matchesSize;
+
+            card.hidden = !isVisible;
+            if (isVisible) visibleCount += 1;
+          });
+
+          productCount.textContent = `${visibleCount} ${visibleCount === 1 ? "piece" : "pieces"}`;
+          noResults.classList.toggle("hidden", visibleCount !== 0);
+
+          const hasActiveFilters = Boolean(category || gender || size);
+          clearButton.classList.toggle("hidden", !hasActiveFilters);
+
+          if (syncUrl) updateUrl();
+        };
+
+        form.addEventListener("change", () => applyFilters());
+        form.addEventListener("submit", (event) => {
+          event.preventDefault();
+          applyFilters();
+        });
+        form.addEventListener("reset", () => {
+          window.requestAnimationFrame(() => applyFilters());
+        });
+        window.addEventListener("popstate", () => {
+          loadFiltersFromUrl();
+          applyFilters({ syncUrl: false });
+        });
+
+        loadFiltersFromUrl();
+        applyFilters({ syncUrl: false });
+      })();
+    </script>
   </body>
 </html>
