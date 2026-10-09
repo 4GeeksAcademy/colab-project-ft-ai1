@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en" class="h-full scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Shop CASTANIER pants, sweaters, and shirts inspired by French heritage and quiet luxury." />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#283D32" />
+    <title>Clothing Catalog | CASTANIER</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "CASTANIER",
+            "description": "A French boutique for contemporary luxury fashion."
+          },
+          {
+            "@type": "CollectionPage",
+            "name": "Clothing Catalog | CASTANIER",
+            "description": "Shop CASTANIER pants, sweaters, and shirts inspired by French heritage and quiet luxury."
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body class="flex min-h-full flex-col overflow-x-hidden bg-[#F8F5EF] font-['Inter',sans-serif] text-[#28241F] antialiased">
+    <a href="#main-content" class="sr-only z-[100] rounded-[4px] bg-[#283D32] px-4 py-3 text-[13px] font-medium uppercase tracking-[0.12em] text-white focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:outline-none focus:ring-2 focus:ring-[#76513D] focus:ring-offset-2">
+      Skip to main content
+    </a>
+
+    <header class="relative z-50 border-b border-[#D8D0C3] bg-[#F8F5EF]" role="banner">
+      <div class="mx-auto flex h-16 max-w-7xl items-center gap-3 px-4 sm:px-6 md:h-20 md:gap-6 lg:px-8">
+        <details class="group md:hidden">
+          <summary class="-ml-2 flex size-11 cursor-pointer list-none items-center justify-center rounded-[4px] text-[#283D32] outline-none transition-colors duration-200 marker:content-none hover:text-[#76513D] focus-visible:ring-2 focus-visible:ring-[#283D32]" aria-label="Open navigation menu">
+            <svg class="size-5 group-open:hidden" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M4 7h16M4 12h16M4 17h16"></path>
+            </svg>
+            <svg class="hidden size-5 group-open:block" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="m6 6 12 12M18 6 6 18"></path>
+            </svg>
+          </summary>
+
+          <div class="absolute inset-x-0 top-16 border-b border-[#D8D0C3] bg-[#F8F5EF] px-4 py-6 shadow-[0_12px_24px_rgba(40,36,31,0.06)] sm:px-6">
+            <form action="/search" method="get" role="search">
+              <label for="mobile-search" class="block text-[13px] font-medium uppercase tracking-[0.12em]">Search</label>
+              <div class="relative mt-2">
+                <input id="mobile-search" name="q" type="search" class="h-12 w-full rounded-[4px] border border-[#D8D0C3] bg-white px-4 pr-12 text-sm outline-none placeholder:text-[#81796E] focus:border-[#283D32] focus:ring-2 focus:ring-[#283D32]/20" placeholder="Search the collection" />
+                <button type="submit" class="absolute inset-y-0 right-0 flex w-12 items-center justify-center rounded-[4px] text-[#283D32] outline-none transition-colors duration-200 hover:text-[#76513D] focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#283D32]" aria-label="Submit search">
+                  <svg class="size-5" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </details>
+
+        <a href="/" class="shrink-0 rounded-[2px] font-['Cormorant_Garamond',serif] text-[22px] font-medium leading-none tracking-[0.2em] text-[#283D32] outline-none transition-colors duration-200 hover:text-[#76513D] focus-visible:ring-2 focus-visible:ring-[#283D32] sm:text-2xl md:tracking-[0.24em]" aria-label="CASTANIER home">
+          CASTANIER
+        </a>
+
+        <form class="ml-auto hidden max-w-64 flex-1 md:block xl:max-w-72" action="/search" method="get" role="search">
+          <label for="desktop-search" class="sr-only">Search the collection</label>
+          <div class="relative">
+            <input id="desktop-search" name="q" type="search" class="h-12 w-full rounded-[4px] border border-[#D8D0C3] bg-white px-4 pr-12 text-sm outline-none placeholder:text-[#81796E] focus:border-[#283D32] focus:ring-2 focus:ring-[#283D32]/20" placeholder="Search" />
+            <button type="submit" class="absolute inset-y-0 right-0 flex w-12 items-center justify-center rounded-[4px] text-[#283D32] outline-none transition-colors duration-200 hover:text-[#76513D] focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#283D32]" aria-label="Submit search">
+              <svg class="size-5" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path>
+              </svg>
+            </button>
+          </div>
+        </form>
+
+        <nav class="ml-auto md:ml-0" aria-label="Account navigation">
+          <ul class="flex items-center gap-1">
+            <li>
+              <a href="/catalog" class="flex size-11 items-center justify-center rounded-[4px] text-[#283D32] outline-none transition-colors duration-200 hover:text-[#76513D] focus-visible:ring-2 focus-visible:ring-[#283D32]" aria-label="Catalog">
+                <svg class="size-4" aria-hidden="true" viewBox="0 0 18 18" fill="currentColor">
+                  <rect x="1" y="1" width="6" height="6" rx="0.5"></rect>
+                  <rect x="11" y="1" width="6" height="6" rx="0.5"></rect>
+                  <rect x="1" y="11" width="6" height="6" rx="0.5"></rect>
+                  <rect x="11" y="11" width="6" height="6" rx="0.5"></rect>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="/account" class="flex size-11 items-center justify-center rounded-[4px] text-[#283D32] outline-none transition-colors duration-200 hover:text-[#76513D] focus-visible:ring-2 focus-visible:ring-[#283D32]" aria-label="My account">
+                <svg class="size-5" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <circle cx="12" cy="8" r="3.5"></circle><path d="M5 20a7 7 0 0 1 14 0"></path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="/cart" class="relative flex size-11 items-center justify-center rounded-[4px] text-[#283D32] outline-none transition-colors duration-200 hover:text-[#76513D] focus-visible:ring-2 focus-visible:ring-[#283D32]" aria-label="Shopping bag, 0 items">
+                <svg class="size-5" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M5.5 8.5h13l-1 11h-11l-1-11Z"></path><path d="M9 9V7a3 3 0 0 1 6 0v2"></path>
+                </svg>
+                <span class="absolute right-0.5 top-0.5 flex size-4 items-center justify-center rounded-full bg-[#76513D] text-[10px] font-medium text-white" aria-hidden="true">0</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="flex-1" tabindex="-1">
+      <section class="mx-auto max-w-7xl px-4 py-12 sm:px-6 md:py-20 lg:px-8" aria-labelledby="catalog-heading">
+        <div class="max-w-2xl">
+          <p class="text-xs font-medium uppercase tracking-[0.12em] text-[#76513D]">The collection</p>
+          <h1 id="catalog-heading" class="mt-3 font-['Cormorant_Garamond',serif] text-4xl font-normal leading-[1.1] tracking-[0.04em] text-[#28241F] md:text-[56px]">
+            Essential pieces
+          </h1>
+          <p class="mt-5 max-w-xl leading-7 text-[#81796E]">
+            A considered edit of relaxed tailoring, soft knitwear, and naturally textured shirts.
+          </p>
+        </div>
+
+        <form id="catalog-filters" class="mt-10 grid gap-4 border-y border-[#D8D0C3] py-6 sm:grid-cols-3 md:mt-12 md:max-w-4xl" aria-label="Catalog filters">
+          <div>
+            <label for="category-filter" class="block text-[13px] font-medium uppercase tracking-[0.12em] text-[#28241F]">Category</label>
+            <select id="category-filter" name="category" class="mt-2 h-12 w-full rounded-[4px] border border-[#D8D0C3] bg-white px-4 text-sm text-[#28241F] outline-none focus:border-[#283D32] focus:ring-2 focus:ring-[#283D32]/20">
+              <option value="">All categories</option>
+              <option value="pants">Pants</option>
+              <option value="sweaters">Sweaters</option>
+              <option value="shirts">Shirts</option>
+            </select>
+          </div>
+          <div>
+            <label for="gender-filter" class="block text-[13px] font-medium uppercase tracking-[0.12em] text-[#28241F]">Gender</label>
+            <select id="gender-filter" name="gender" class="mt-2 h-12 w-full rounded-[4px] border border-[#D8D0C3] bg-white px-4 text-sm text-[#28241F] outline-none focus:border-[#283D32] focus:ring-2 focus:ring-[#283D32]/20">
+              <option value="">Women &amp; Men</option>
+              <option value="women">Women</option>
+              <option value="men">Men</option>
+            </select>
+          </div>
+          <div>
+            <label for="size-filter" class="block text-[13px] font-medium uppercase tracking-[0.12em] text-[#28241F]">Size</label>
+            <select id="size-filter" name="size" class="mt-2 h-12 w-full rounded-[4px] border border-[#D8D0C3] bg-white px-4 text-sm text-[#28241F] outline-none focus:border-[#283D32] focus:ring-2 focus:ring-[#283D32]/20">
+              <option value="">All sizes</option>
+              <option value="xs">XS</option>
+              <option value="s">S</option>
+              <option value="m">M</option>
+              <option value="l">L</option>
+              <option value="xl">XL</option>
+            </select>
+          </div>
+          <button id="clear-filters" type="reset" class="hidden min-h-11 w-fit rounded-[4px] border border-[#283D32] px-5 text-[13px] font-medium uppercase tracking-[0.12em] text-[#283D32] outline-none transition-colors duration-200 hover:bg-[#283D32] hover:text-white focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-2 sm:col-span-3">
+            Clear filters
+          </button>
+        </form>
+
+        <div class="mt-8 flex items-center justify-between">
+          <p id="product-count" class="text-sm text-[#81796E]" aria-live="polite" aria-atomic="true">20 pieces</p>
+          <p class="text-xs font-medium uppercase tracking-[0.12em] text-[#81796E]">Autumn edit</p>
+        </div>
+
+        <div class="mt-6 grid grid-cols-2 gap-x-4 gap-y-10 md:grid-cols-3 md:gap-x-6 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-12" aria-label="Products">
+          <article class="group" data-gender="women" data-category="pants" data-sizes="xs s m l" itemscope itemtype="https://schema.org/Product">
+            <a href="/products/elise-wide-leg-trousers" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
+              <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
+                <img src="assets/images/w-pants-elise.png" alt="Women's forest green élise wide-leg trousers" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" fetchpriority="high" itemprop="image" />
+              </div>
+              <div class="pt-4">
+                <p class="text-xs font-medium uppercase tracking-[0.12em] text-[#81796E]">Women · Pants</p>
+                <h2 class="mt-1 text-[15px] font-medium leading-6 text-[#28241F] transition-colors duration-200 group-hover:text-[#76513D]" itemprop="name">Élise Wide-Leg Trousers</h2>
+                <p class="mt-1 text-[13px] leading-5 text-[#81796E]" itemprop="description">Double-pleat wool-linen tailoring</p>
+                <p class="mt-2 text-sm text-[#28241F]" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  <meta itemprop="priceCurrency" content="EUR" />
+                  <meta itemprop="price" content="189" />
+                  <span>€189</span>
+                </p>
+              </div>
+            </a>
+          </article>
+
+          <article class="group" data-gender="women" data-category="pants" data-sizes="xs s m" itemscope itemtype="https://schema.org/Product">
+            <a href="/products/margaux-tapered-trousers" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
+              <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
+                <img src="assets/images/w-pants-margaux.png" alt="Women's chestnut margaux tapered trousers" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" fetchpriority="high" itemprop="image" />
+              </div>
+              <div class="pt-4">
+                <p class="text-xs font-medium uppercase tracking-[0.12em] text-[#81796E]">Women · Pants</p>
+                <h2 class="mt-1 text-[15px] font-medium leading-6 text-[#28241F] transition-colors duration-200 group-hover:text-[#76513D]" itemprop="name">Margaux Tapered Trousers</h2>
+                <p class="mt-1 text-[13px] leading-5 text-[#81796E]" itemprop="description">Paper-bag waist and cropped ankle</p>
+                <p class="mt-2 text-sm text-[#28241F]" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  <meta itemprop="priceCurrency" content="EUR" />
+                  <meta itemprop="price" content="175" />
+                  <span>€175</span>
+                </p>
+              </div>
+            </a>
+          </article>
+
+          <article class="group" data-gender="women" data-category="pants" data-sizes="s m l" itemscope itemtype="https://schema.org/Product">
+            <a href="/products/camille-sailor-trousers" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
+              <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
+                <img src="assets/images/w-pants-camille.png" alt="Women's warm beige camille sailor trousers" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" fetchpriority="high" itemprop="image" />
+              </div>
+              <div class="pt-4">
+                <p class="text-xs font-medium uppercase tracking-[0.12em] text-[#81796E]">Women · Pants</p>
+                <h2 class="mt-1 text-[15px] font-medium leading-6 text-[#28241F] transition-colors duration-200 group-hover:text-[#76513D]" itemprop="name">Camille Sailor Trousers</h2>
+                <p class="mt-1 text-[13px] leading-5 text-[#81796E]" itemprop="description">High waist with side-button detail</p>
+                <p class="mt-2 text-sm text-[#28241F]" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  <meta itemprop="priceCurrency" content="EUR" />
+                  <meta itemprop="price" content="165" />
+                  <span>€165</span>
+                </p>
+              </div>
+            </a>
+          </article>
+
+          <article class="group" data-gender="women" data-category="pants" data-sizes="xs s m l xl" itemscope itemtype="https://schema.org/Product">
+            <a href="/products/juliette-palazzo-trousers" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
+              <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
+                <img src="assets/images/w-pants-juliette.png" alt="Women's dark espresso juliette palazzo trousers" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" fetchpriority="high" itemprop="image" />
+              </div>
+              <div class="pt-4">
+                <p class="text-xs font-medium uppercase tracking-[0.12em] text-[#81796E]">Women · Pants</p>
+                <h2 class="mt-1 text-[15px] font-medium leading-6 text-[#28241F] transition-colors duration-200 group-hover:text-[#76513D]" itemprop="name">Juliette Palazzo Trousers</h2>
+                <p class="mt-1 text-[13px] leading-5 text-[#81796E]" itemprop="description">Fluid crepe with a sweeping wide leg</p>
+                <p class="mt-2 text-sm text-[#28241F]" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  <meta itemprop="priceCurrency" content="EUR" />
+                  <meta itemprop="price" content="195" />
+                  <span>€195</span>
+                </p>
+              </div>
+            </a>
+          </article>
+
+          <article class="group" data-gender="women" data-category="pants" data-sizes="s m l" itemscope itemtype="https://schema.org/Product">
+            <a href="/products/leonie-utility-trousers" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
+              <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
+                <img src="assets/images/w-pants-leonie.png" alt="Women's sage green léonie utility trousers" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" loading="lazy" itemprop="image" />
+              </div>
+              <div class="pt-4">
+                <p class="text-xs font-medium uppercase tracking-[0.12em] text-[#81796E]">Women · Pants</p>
+                <h2 class="mt-1 text-[15px] font-medium leading-6 text-[#28241F] transition-colors duration-200 group-hover:text-[#76513D]" itemprop="name">Léonie Utility Trousers</h2>
+                <p class="mt-1 text-[13px] leading-5 text-[#81796E]" itemprop="description">Straight twill cut with refined patch pockets</p>
+                <p class="mt-2 text-sm text-[#28241F]" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  <meta itemprop="priceCurrency" content="EUR" />
+                  <meta itemprop="price" content="169" />
+                  <span>€169</span>
+                </p>
+              </div>
+            </a>
+          </article>
+
+          <article class="group" data-gender="men" data-category="pants" data-sizes="s m l xl" itemscope itemtype="https://schema.org/Product">
+            <a href="/products/laurent-pleated-trousers" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
+              <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
+                <img src="assets/images/m-pants-laurent.png" alt="Men's dark espresso laurent pleated trousers" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" loading="lazy" itemprop="image" />
+              </div>
+              <div class="pt-4">
+                <p class="text-xs font-medium uppercase tracking-[0.12em] text-[#81796E]">Men · Pants</p>
+                <h2 class="mt-1 text-[15px] font-medium leading-6 text-[#28241F] transition-colors duration-200 group-hover:text-[#76513D]" itemprop="name">Laurent Pleated Trousers</h2>
+                <p class="mt-1 text-[13px] leading-5 text-[#81796E]" itemprop="description">Relaxed wool cut with a tapered leg</p>
+                <p class="mt-2 text-sm text-[#28241F]" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  <meta itemprop="priceCurrency" content="EUR" />
+                  <meta itemprop="price" content="195" />
+                  <span>€195</span>
+                </p>
+              </div>
+            </a>
+          </article>
+
+          <article class="group" data-gender="men" data-category="pants" data-sizes="s m l xl" itemscope itemtype="https://schema.org/Product">
+            <a href="/products/etienne-linen-trousers" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
+              <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
+                <img src="assets/images/m-pants-etienne.png" alt="Men's warm beige étienne linen trousers" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" loading="lazy" itemprop="image" />
+              </div>
+              <div class="pt-4">
+                <p class="text-xs font-medium uppercase tracking-[0.12em] text-[#81796E]">Men · Pants</p>
+                <h2 class="mt-1 text-[15px] font-medium leading-6 text-[#28241F] transition-colors duration-200 group-hover:text-[#76513D]" itemprop="name">Étienne Linen Trousers</h2>
+                <p class="mt-1 text-[13px] leading-5 text-[#81796E]" itemprop="description">Drawstring waist and easy straight leg</p>
+                <p class="mt-2 text-sm text-[#28241F]" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  <meta itemprop="priceCurrency" content="EUR" />
+                  <meta itemprop="price" content="165" />
+                  <span>€165</span>
+                </p>
+              </div>
+            </a>
+          </article>
+
+          <article class="group" data-gender="men" data-category="pants" data-sizes="m l xl" itemscope itemtype="https://schema.org/Product">
+            <a href="/products/marcel-tailored-trousers" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
+              <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
+                <img src="assets/images/m-pants-marcel.png" alt="Men's forest green marcel tailored trousers" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" loading="lazy" itemprop="image" />
+              </div>
+              <div class="pt-4">
+                <p class="text-xs font-medium uppercase tracking-[0.12em] text-[#81796E]">Men · Pants</p>
+                <h2 class="mt-1 text-[15px] font-medium leading-6 text-[#28241F] transition-colors duration-200 group-hover:text-[#76513D]" itemprop="name">Marcel Tailored Trousers</h2>
+                <p class="mt-1 text-[13px] leading-5 text-[#81796E]" itemprop="description">Slim wool cut with a pressed front</p>
+                <p class="mt-2 text-sm text-[#28241F]" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  <meta itemprop="priceCurrency" content="EUR" />
+                  <meta itemprop="price" content="199" />
+                  <span>€199</span>
+                </p>
+              </div>
+            </a>
+          </article>
+
+          <article class="group" data-gender="men" data-category="pants" data-sizes="s m l" itemscope itemtype="https://schema.org/Product">
+            <a href="/products/theo-workwear-chinos" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
+              <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
+                <img src="assets/images/m-pants-theo.png" alt="Men's chestnut théo workwear chinos" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" loading="lazy" itemprop="image" />
+              </div>
+              <div class="pt-4">
+                <p class="text-xs font-medium uppercase tracking-[0.12em] text-[#81796E]">Men · Pants</p>
+                <h2 class="mt-1 text-[15px] font-medium leading-6 text-[#28241F] transition-colors duration-200 group-hover:text-[#76513D]" itemprop="name">Théo Workwear Chinos</h2>
+                <p class="mt-1 text-[13px] leading-5 text-[#81796E]" itemprop="description">Brushed twill with reinforced seams</p>
+                <p class="mt-2 text-sm text-[#28241F]" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  <meta itemprop="priceCurrency" content="EUR" />
+                  <meta itemprop="price" content="175" />
+                  <span>€175</span>
+                </p>
+              </div>
+            </a>
+          </article>
+
+          <article class="group" data-gender="men" data-category="pants" data-sizes="m l xl" itemscope itemtype="https://schema.org/Product">
+            <a href="/products/gabriel-double-pleat-trousers" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
+              <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
+                <img src="assets/images/m-pants-gabriel.png" alt="Men's muted taupe gabriel double-pleat trousers" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" loading="lazy" itemprop="image" />
+              </div>
+              <div class="pt-4">
+                <p class="text-xs font-medium uppercase tracking-[0.12em] text-[#81796E]">Men · Pants</p>
+                <h2 class="mt-1 text-[15px] font-medium leading-6 text-[#28241F] transition-colors duration-200 group-hover:text-[#76513D]" itemprop="name">Gabriel Double-Pleat Trousers</h2>
+                <p class="mt-1 text-[13px] leading-5 text-[#81796E]" itemprop="description">High rise, wide leg, and turn-up cuffs</p>
+                <p class="mt-2 text-sm text-[#28241F]" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  <meta itemprop="priceCurrency" content="EUR" />
+                  <meta itemprop="price" content="189" />
+                  <span>€189</span>
+                </p>
+              </div>
+            </a>
+          </article>
+
+          <article class="group" data-gender="women" data-category="sweaters" data-sizes="xs s m" itemscope itemtype="https://schema.org/Product">
+            <a href="/products/colette-mock-neck-sweater" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
+              <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
+                <img src="assets/images/w-sweater-colette.png" alt="Women's sage green colette mock-neck sweater" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" loading="lazy" itemprop="image" />
+              </div>
+              <div class="pt-4">
+                <p class="text-xs font-medium uppercase tracking-[0.12em] text-[#81796E]">Women · Sweaters</p>
+                <h2 class="mt-1 text-[15px] font-medium leading-6 text-[#28241F] transition-colors duration-200 group-hover:text-[#76513D]" itemprop="name">Colette Mock-Neck Sweater</h2>
+                <p class="mt-1 text-[13px] leading-5 text-[#81796E]" itemprop="description">Fitted fine-rib merino knit</p>
+                <p class="mt-2 text-sm text-[#28241F]" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  <meta itemprop="priceCurrency" content="EUR" />
+                  <meta itemprop="price" content="195" />
+                  <span>€195</span>
+                </p>
+              </div>
+            </a>
+          </article>
+
+          <article class="group" data-gender="women" data-category="sweaters" data-sizes="s m l" itemscope itemtype="https://schema.org/Product">
+            <a href="/products/fleur-cable-knit-sweater" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
+              <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
+                <img src="assets/images/w-sweater-fleur.png" alt="Women's warm beige fleur cable-knit sweater" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" loading="lazy" itemprop="image" />
+              </div>
+              <div class="pt-4">
+                <p class="text-xs font-medium uppercase tracking-[0.12em] text-[#81796E]">Women · Sweaters</p>
+                <h2 class="mt-1 text-[15px] font-medium leading-6 text-[#28241F] transition-colors duration-200 group-hover:text-[#76513D]" itemprop="name">Fleur Cable-Knit Sweater</h2>
+                <p class="mt-1 text-[13px] leading-5 text-[#81796E]" itemprop="description">Relaxed hand-finished cable texture</p>
+                <p class="mt-2 text-sm text-[#28241F]" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  <meta itemprop="priceCurrency" content="EUR" />
+                  <meta itemprop="price" content="210" />
+                  <span>€210</span>
+                </p>
+              </div>
+            </a>
+          </article>
+
+          <article class="group" data-gender="women" data-category="sweaters" data-sizes="xs s m l" itemscope itemtype="https://schema.org/Product">
+            <a href="/products/adele-wrap-cardigan" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
+              <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
+                <img src="assets/images/w-sweater-adele.png" alt="Women's ivory adèle wrap cardigan" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" loading="lazy" itemprop="image" />
+              </div>
+              <div class="pt-4">
+                <p class="text-xs font-medium uppercase tracking-[0.12em] text-[#81796E]">Women · Sweaters</p>
+                <h2 class="mt-1 text-[15px] font-medium leading-6 text-[#28241F] transition-colors duration-200 group-hover:text-[#76513D]" itemprop="name">Adèle Wrap Cardigan</h2>
+                <p class="mt-1 text-[13px] leading-5 text-[#81796E]" itemprop="description">Cashmere wrap front with a self-tie waist</p>
+                <p class="mt-2 text-sm text-[#28241F]" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  <meta itemprop="priceCurrency" content="EUR" />
+                  <meta itemprop="price" content="225" />
+                  <span>€225</span>
+                </p>
+              </div>
+            </a>
+          </article>
+
+          <article class="group" data-gender="men" data-category="sweaters" data-sizes="s m l xl" itemscope itemtype="https://schema.org/Product">
+            <a href="/products/lucien-merino-crewneck" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
+              <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
+                <img src="assets/images/m-sweater-lucien.png" alt="Men's forest green lucien merino crewneck" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" loading="lazy" itemprop="image" />
+              </div>
+              <div class="pt-4">
+                <p class="text-xs font-medium uppercase tracking-[0.12em] text-[#81796E]">Men · Sweaters</p>
+                <h2 class="mt-1 text-[15px] font-medium leading-6 text-[#28241F] transition-colors duration-200 group-hover:text-[#76513D]" itemprop="name">Lucien Merino Crewneck</h2>
+                <p class="mt-1 text-[13px] leading-5 text-[#81796E]" itemprop="description">Fine-gauge knit with saddle shoulders</p>
+                <p class="mt-2 text-sm text-[#28241F]" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  <meta itemprop="priceCurrency" content="EUR" />
+                  <meta itemprop="price" content="185" />
+                  <span>€185</span>
+                </p>
+              </div>
+            </a>
+          </article>
+
+          <article class="group" data-gender="men" data-category="sweaters" data-sizes="m l xl" itemscope itemtype="https://schema.org/Product">
+            <a href="/products/bastien-half-zip-sweater" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
+              <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
+                <img src="assets/images/m-sweater-bastien.png" alt="Men's dark espresso bastien half-zip sweater" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" loading="lazy" itemprop="image" />
+              </div>
+              <div class="pt-4">
+                <p class="text-xs font-medium uppercase tracking-[0.12em] text-[#81796E]">Men · Sweaters</p>
+                <h2 class="mt-1 text-[15px] font-medium leading-6 text-[#28241F] transition-colors duration-200 group-hover:text-[#76513D]" itemprop="name">Bastien Half-Zip Sweater</h2>
+                <p class="mt-1 text-[13px] leading-5 text-[#81796E]" itemprop="description">Textured knit with a structured mock collar</p>
+                <p class="mt-2 text-sm text-[#28241F]" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  <meta itemprop="priceCurrency" content="EUR" />
+                  <meta itemprop="price" content="205" />
+                  <span>€205</span>
+                </p>
+              </div>
+            </a>
+          </article>
+
+          <article class="group" data-gender="women" data-category="shirts" data-sizes="xs s m l" itemscope itemtype="https://schema.org/Product">
+            <a href="/products/claire-oversized-linen-shirt" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
+              <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
+                <img src="assets/images/w-shirt-claire.png" alt="Women's ivory claire oversized linen shirt" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" loading="lazy" itemprop="image" />
+              </div>
+              <div class="pt-4">
+                <p class="text-xs font-medium uppercase tracking-[0.12em] text-[#81796E]">Women · Shirts</p>
+                <h2 class="mt-1 text-[15px] font-medium leading-6 text-[#28241F] transition-colors duration-200 group-hover:text-[#76513D]" itemprop="name">Claire Oversized Linen Shirt</h2>
+                <p class="mt-1 text-[13px] leading-5 text-[#81796E]" itemprop="description">Longline cut with dropped shoulders</p>
+                <p class="mt-2 text-sm text-[#28241F]" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  <meta itemprop="priceCurrency" content="EUR" />
+                  <meta itemprop="price" content="149" />
+                  <span>€149</span>
+                </p>
+              </div>
+            </a>
+          </article>
+
+          <article class="group" data-gender="women" data-category="shirts" data-sizes="xs s m" itemscope itemtype="https://schema.org/Product">
+            <a href="/products/elodie-collarless-shirt" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
+              <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
+                <img src="assets/images/w-shirt-elodie.png" alt="Women's sage green élodie collarless shirt" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" loading="lazy" itemprop="image" />
+              </div>
+              <div class="pt-4">
+                <p class="text-xs font-medium uppercase tracking-[0.12em] text-[#81796E]">Women · Shirts</p>
+                <h2 class="mt-1 text-[15px] font-medium leading-6 text-[#28241F] transition-colors duration-200 group-hover:text-[#76513D]" itemprop="name">Élodie Collarless Shirt</h2>
+                <p class="mt-1 text-[13px] leading-5 text-[#81796E]" itemprop="description">Cotton voile with pintucks and gathered cuffs</p>
+                <p class="mt-2 text-sm text-[#28241F]" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  <meta itemprop="priceCurrency" content="EUR" />
+                  <meta itemprop="price" content="155" />
+                  <span>€155</span>
+                </p>
+              </div>
+            </a>
+          </article>
+
+          <article class="group" data-gender="men" data-category="shirts" data-sizes="s m l xl" itemscope itemtype="https://schema.org/Product">
+            <a href="/products/henri-oxford-shirt" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
+              <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
+                <img src="assets/images/m-shirt-henri.png" alt="Men's ivory henri oxford shirt" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" loading="lazy" itemprop="image" />
+              </div>
+              <div class="pt-4">
+                <p class="text-xs font-medium uppercase tracking-[0.12em] text-[#81796E]">Men · Shirts</p>
+                <h2 class="mt-1 text-[15px] font-medium leading-6 text-[#28241F] transition-colors duration-200 group-hover:text-[#76513D]" itemprop="name">Henri Oxford Shirt</h2>
+                <p class="mt-1 text-[13px] leading-5 text-[#81796E]" itemprop="description">Structured regular cut with a pointed collar</p>
+                <p class="mt-2 text-sm text-[#28241F]" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  <meta itemprop="priceCurrency" content="EUR" />
+                  <meta itemprop="price" content="145" />
+                  <span>€145</span>
+                </p>
+              </div>
+            </a>
+          </article>
+
+          <article class="group" data-gender="men" data-category="shirts" data-sizes="s m l xl" itemscope itemtype="https://schema.org/Product">
+            <a href="/products/jules-camp-collar-shirt" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
+              <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
+                <img src="assets/images/m-shirt-jules.png" alt="Men's chestnut jules camp-collar shirt" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" loading="lazy" itemprop="image" />
+              </div>
+              <div class="pt-4">
+                <p class="text-xs font-medium uppercase tracking-[0.12em] text-[#81796E]">Men · Shirts</p>
+                <h2 class="mt-1 text-[15px] font-medium leading-6 text-[#28241F] transition-colors duration-200 group-hover:text-[#76513D]" itemprop="name">Jules Camp-Collar Shirt</h2>
+                <p class="mt-1 text-[13px] leading-5 text-[#81796E]" itemprop="description">Short-sleeve linen with a relaxed boxy cut</p>
+                <p class="mt-2 text-sm text-[#28241F]" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  <meta itemprop="priceCurrency" content="EUR" />
+                  <meta itemprop="price" content="139" />
+                  <span>€139</span>
+                </p>
+              </div>
+            </a>
+          </article>
+
+          <article class="group" data-gender="men" data-category="shirts" data-sizes="m l xl" itemscope itemtype="https://schema.org/Product">
+            <a href="/products/mathieu-band-collar-shirt" class="block rounded-[4px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F8F5EF]">
+              <div class="aspect-[3/4] overflow-hidden rounded-[4px] bg-[#E8DECD]">
+                <img src="assets/images/m-shirt-mathieu.png" alt="Men's muted taupe mathieu band-collar shirt" class="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]" loading="lazy" itemprop="image" />
+              </div>
+              <div class="pt-4">
+                <p class="text-xs font-medium uppercase tracking-[0.12em] text-[#81796E]">Men · Shirts</p>
+                <h2 class="mt-1 text-[15px] font-medium leading-6 text-[#28241F] transition-colors duration-200 group-hover:text-[#76513D]" itemprop="name">Mathieu Band-Collar Shirt</h2>
+                <p class="mt-1 text-[13px] leading-5 text-[#81796E]" itemprop="description">Brushed cotton with a concealed placket</p>
+                <p class="mt-2 text-sm text-[#28241F]" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  <meta itemprop="priceCurrency" content="EUR" />
+                  <meta itemprop="price" content="149" />
+                  <span>€149</span>
+                </p>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <div id="no-results" class="mt-12 hidden border border-[#D8D0C3] bg-[#E8DECD]/40 px-6 py-12 text-center" role="status">
+          <h2 class="font-['Cormorant_Garamond',serif] text-3xl font-medium text-[#28241F]">No pieces found</h2>
+          <p class="mt-3 text-sm text-[#81796E]">Try another category, gender, or size.</p>
+          <button type="reset" form="catalog-filters" class="mt-6 min-h-11 rounded-[4px] border border-[#283D32] px-5 text-[13px] font-medium uppercase tracking-[0.12em] text-[#283D32] outline-none transition-colors duration-200 hover:bg-[#283D32] hover:text-white focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-2">
+            Clear filters
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#283D32] text-[#F8F5EF]">
+      <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 md:py-16 lg:px-8">
+        <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+          <div>
+            <a href="/" class="inline-block rounded-[2px] font-['Cormorant_Garamond',serif] text-2xl font-medium tracking-[0.24em] outline-none transition-colors duration-200 hover:text-[#E8DECD] focus-visible:ring-2 focus-visible:ring-[#E8DECD]" aria-label="CASTANIER home">CASTANIER</a>
+            <p class="mt-5 max-w-xs text-sm leading-6 text-[#E8DECD]">Contemporary French clothing shaped by natural elegance and enduring craft.</p>
+          </div>
+
+          <nav aria-labelledby="footer-categories">
+            <h2 id="footer-categories" class="text-xs font-medium uppercase tracking-[0.12em] text-white">Categories</h2>
+            <ul class="mt-5 space-y-3 text-sm text-[#E8DECD]">
+              <li><a href="/footwear" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Footwear</a></li>
+              <li><a href="/shirts" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Shirts</a></li>
+              <li><a href="/pants" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Pants</a></li>
+              <li><a href="/accessories" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Accessories</a></li>
+            </ul>
+          </nav>
+
+          <nav aria-labelledby="footer-legal">
+            <h2 id="footer-legal" class="text-xs font-medium uppercase tracking-[0.12em] text-white">Legal</h2>
+            <ul class="mt-5 space-y-3 text-sm text-[#E8DECD]">
+              <li><a href="/terms" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Terms &amp; conditions</a></li>
+              <li><a href="/privacy" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Privacy policy</a></li>
+              <li><a href="/about" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">About the brand</a></li>
+              <li><a href="/accessibility" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Accessibility</a></li>
+            </ul>
+          </nav>
+
+          <section aria-labelledby="footer-contact">
+            <h2 id="footer-contact" class="text-xs font-medium uppercase tracking-[0.12em] text-white">Contact</h2>
+            <ul class="mt-5 space-y-3 text-sm text-[#E8DECD]">
+              <li><a href="/contact" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Contact us</a></li>
+              <li><a href="/shipping" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Shipping &amp; returns</a></li>
+              <li><a href="/appointments" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Book an appointment</a></li>
+            </ul>
+            <nav class="mt-5" aria-label="Social media">
+              <ul class="flex gap-5 text-xs font-medium uppercase tracking-[0.12em]">
+                <li><a href="/instagram" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Instagram</a></li>
+                <li><a href="/pinterest" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Pinterest</a></li>
+              </ul>
+            </nav>
+          </section>
+        </div>
+
+        <div class="mt-12 border-t border-[#F8F5EF]/20 pt-6 text-xs text-[#E8DECD] md:mt-16">
+          <p>&copy; 2026 CASTANIER. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      (() => {
+        const form = document.querySelector("#catalog-filters");
+        const categoryFilter = document.querySelector("#category-filter");
+        const genderFilter = document.querySelector("#gender-filter");
+        const sizeFilter = document.querySelector("#size-filter");
+        const clearButton = document.querySelector("#clear-filters");
+        const productCount = document.querySelector("#product-count");
+        const noResults = document.querySelector("#no-results");
+        const productCards = [...document.querySelectorAll("[data-category][data-gender][data-sizes]")];
+
+        if (!form || !categoryFilter || !genderFilter || !sizeFilter) return;
+
+        const controls = {
+          category: categoryFilter,
+          gender: genderFilter,
+          size: sizeFilter
+        };
+
+        const loadFiltersFromUrl = () => {
+          const params = new URLSearchParams(window.location.search);
+
+          Object.entries(controls).forEach(([name, control]) => {
+            const value = params.get(name) || "";
+            const isValid = [...control.options].some((option) => option.value === value);
+            control.value = isValid ? value : "";
+          });
+        };
+
+        const updateUrl = () => {
+          const params = new URLSearchParams(window.location.search);
+
+          Object.entries(controls).forEach(([name, control]) => {
+            if (control.value) {
+              params.set(name, control.value);
+            } else {
+              params.delete(name);
+            }
+          });
+
+          const query = params.toString();
+          const url = query ? `${window.location.pathname}?${query}` : window.location.pathname;
+          window.history.replaceState(null, "", url);
+        };
+
+        const applyFilters = ({ syncUrl = true } = {}) => {
+          const category = categoryFilter.value;
+          const gender = genderFilter.value;
+          const size = sizeFilter.value;
+          let visibleCount = 0;
+
+          productCards.forEach((card) => {
+            const availableSizes = card.dataset.sizes.split(" ");
+            const matchesCategory = !category || card.dataset.category === category;
+            const matchesGender = !gender || card.dataset.gender === gender;
+            const matchesSize = !size || availableSizes.includes(size);
+            const isVisible = matchesCategory && matchesGender && matchesSize;
+
+            card.hidden = !isVisible;
+            if (isVisible) visibleCount += 1;
+          });
+
+          productCount.textContent = `${visibleCount} ${visibleCount === 1 ? "piece" : "pieces"}`;
+          noResults.classList.toggle("hidden", visibleCount !== 0);
+
+          const hasActiveFilters = Boolean(category || gender || size);
+          clearButton.classList.toggle("hidden", !hasActiveFilters);
+
+          if (syncUrl) updateUrl();
+        };
+
+        form.addEventListener("change", () => applyFilters());
+        form.addEventListener("submit", (event) => {
+          event.preventDefault();
+          applyFilters();
+        });
+        form.addEventListener("reset", () => {
+          window.requestAnimationFrame(() => applyFilters());
+        });
+        window.addEventListener("popstate", () => {
+          loadFiltersFromUrl();
+          applyFilters({ syncUrl: false });
+        });
+
+        loadFiltersFromUrl();
+        applyFilters({ syncUrl: false });
+      })();
+    </script>
+  </body>
+</html>
