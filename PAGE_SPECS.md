@@ -62,44 +62,24 @@
 >
 > #### 6) Profile (My account)
 >
-> - Keeps **navbar and footer**; opened from the navbar's **"My account"** icon (`/account`).
-> - Only shown when signed in; a signed-out visitor is sent to **Sign in** (7).
+> - Keeps **navbar and footer**.
 > - Two-column layout:
->   - **Left:** account menu (stacks above the content on mobile):
->     - Overview
->     - Orders
->     - Addresses
->     - Payment methods
->     - Account details
->     - Sign out
->   - **Right:** content of the selected section.
-> - **Overview** (default section):
->   - Greeting with the customer's name
->   - Most recent order with its status and a **"View order"** link
->   - Short descriptions linking to every other section
-> - **Orders:** list of past orders with:
->   - Order number and date
->   - Status (processing, shipped, delivered)
->   - Product thumbnails
->   - Order total
->   - **"View details"** button
-> - **Addresses:** saved shipping addresses with **Edit**, **Remove**, and an **"Add address"** button.
-> - **Payment methods:** saved cards shown masked (brand, last 4 digits, expiry) with **Edit** and **Remove**.
-> - **Account details** form:
->   - First name, last name, email, phone
->   - Preferred size
->   - **"Save changes"** button
-> - Filled with the **guest account's** data: **2 sample orders**, **1 saved address**, and **1 saved card**.
-> - **Sign out** clears the session and returns to **Sign in**.
+>   - **Left:** account menu
+>   - **Right:** selected section
+> - Sections:
+>   - **Overview**
+>   - **Orders** (order history)
+>   - **Addresses**
+>   - **Payment methods**
+>   - **Account details**
+> - **"Sign out"** button.
+> - Add **2 sample orders** to show the visual behavior.
 >
 > #### 7) Sign in
 >
-> - Keeps **navbar and footer**; opened from **"My account"** when signed out (`/sign-in`).
-> - Single centered card with:
->   - Heading and short welcome text
->   - Email and password fields
+> - Keeps **navbar and footer**.
+> - Sign-in form with:
+>   - Email
+>   - Password
 >   - **"Sign in"** button
->   - Divider, then a **"Sign in to guest profile"** button
-> - **Guest profile:** a pre-generated sample customer (name, email, phone, preferred size, orders, address, card).
->   - The guest button signs in as this account and opens **Profile** (6).
->   - The email/password form is for display only and shows a note pointing to the guest button.
+> - **"Sign in to guest profile"** button that opens a sample account.
