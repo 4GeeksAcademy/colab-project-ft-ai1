@@ -2,6 +2,7 @@ try:
     # try to import flask, or return error if has not been installed
     from flask import Flask
     from flask import redirect
+    from flask import request
     from flask import send_from_directory
     from flask import url_for
 except ImportError:
@@ -38,6 +39,53 @@ def serve_cart():
 @app.route('/payment', methods=['GET'])
 def serve_payment():
     return send_from_directory(static_file_dir, 'PaymentForm.html')
+
+
+@app.route('/products/<slug>', methods=['GET'])
+def serve_product_slug(slug):
+    return send_from_directory(static_file_dir, 'product_view.html')
+
+
+@app.route('/account', methods=['GET'])
+def serve_account():
+    return send_from_directory(static_file_dir, 'account/index.html')
+
+
+@app.route('/sign-in', methods=['GET'])
+def serve_sign_in():
+    return send_from_directory(static_file_dir, 'sign-in/index.html')
+
+
+@app.route('/search', methods=['GET'])
+def redirect_search():
+    return redirect(url_for('serve_catalog', **request.args))
+
+
+# Footer category links open the catalog, filtered when the category exists there
+@app.route('/<any(shirts, pants, sweaters):category>', methods=['GET'])
+def redirect_category(category):
+    return redirect(url_for('serve_catalog', category=category))
+
+
+@app.route('/<any(footwear, accessories):category>', methods=['GET'])
+def redirect_unlisted_category(category):
+    return redirect(url_for('serve_catalog'))
+
+
+# Info pages are not built yet, so they point at the contact section of the home footer
+@app.route('/<any(terms, privacy, about, accessibility, contact, shipping, appointments):page>', methods=['GET'])
+def redirect_info_page(page):
+    return redirect(url_for('serve_home') + '#footer-contact')
+
+
+@app.route('/instagram', methods=['GET'])
+def redirect_instagram():
+    return redirect('https://www.instagram.com/')
+
+
+@app.route('/pinterest', methods=['GET'])
+def redirect_pinterest():
+    return redirect('https://www.pinterest.com/')
 
 
 @app.route('/home.html', methods=['GET'])
