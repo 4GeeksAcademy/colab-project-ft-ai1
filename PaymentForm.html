@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en" class="h-full scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Complete your CASTANIER order with our simple, secure checkout." />
+		<meta name="robots" content="noindex, nofollow" />
+		<meta name="theme-color" content="#283D32" />
+		<title>Checkout | CASTANIER</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "CheckoutPage",
+				"name": "Checkout | CASTANIER",
+				"description": "Complete your CASTANIER order."
+			}
+		</script>
+	</head>
+
+	<body class="flex min-h-full flex-col bg-[#F8F5EF] font-['Inter',sans-serif] text-[#28241F] antialiased">
+		<a href="#main-content" class="sr-only z-[100] rounded-[4px] bg-[#283D32] px-4 py-3 text-[13px] font-medium uppercase tracking-[0.12em] text-white focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:outline-none focus:ring-2 focus:ring-[#76513D] focus:ring-offset-2">
+			Skip to checkout
+		</a>
+
+		<header class="sticky top-0 z-50 border-b border-[#D8D0C3] bg-[#F8F5EF]" role="banner">
+			<div class="mx-auto flex h-16 max-w-7xl items-center gap-3 px-4 sm:px-6 md:h-20 md:gap-6 lg:px-8">
+				<details class="group md:hidden">
+					<summary class="-ml-2 flex size-11 cursor-pointer list-none items-center justify-center rounded-[4px] text-[#283D32] outline-none transition-colors duration-200 marker:content-none hover:text-[#76513D] focus-visible:ring-2 focus-visible:ring-[#283D32]" aria-label="Open navigation menu">
+						<svg class="size-5 group-open:hidden" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+							<path d="M4 7h16M4 12h16M4 17h16"></path>
+						</svg>
+						<svg class="hidden size-5 group-open:block" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+							<path d="m6 6 12 12M18 6 6 18"></path>
+						</svg>
+					</summary>
+
+					<div class="absolute inset-x-0 top-16 border-b border-[#D8D0C3] bg-[#F8F5EF] px-4 py-6 shadow-[0_12px_24px_rgba(40,36,31,0.06)] sm:px-6">
+						<form action="/search" method="get" role="search">
+							<label for="mobile-search" class="block text-[13px] font-medium uppercase tracking-[0.12em]">Search</label>
+							<div class="relative mt-2">
+								<input id="mobile-search" name="q" type="search" class="h-12 w-full rounded-[4px] border border-[#D8D0C3] bg-white px-4 pr-12 text-sm outline-none placeholder:text-[#81796E] focus:border-[#283D32] focus:ring-2 focus:ring-[#283D32]/20" placeholder="Search the collection" />
+								<button type="submit" class="absolute inset-y-0 right-0 flex w-12 items-center justify-center rounded-[4px] text-[#283D32] outline-none transition-colors duration-200 hover:text-[#76513D] focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#283D32]" aria-label="Submit search">
+									<svg class="size-5" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+										<circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path>
+									</svg>
+								</button>
+							</div>
+						</form>
+					</div>
+				</details>
+
+				<a href="/" class="shrink-0 rounded-[2px] font-['Cormorant_Garamond',serif] text-[22px] font-medium leading-none tracking-[0.2em] text-[#283D32] outline-none transition-colors duration-200 hover:text-[#76513D] focus-visible:ring-2 focus-visible:ring-[#283D32] sm:text-2xl md:tracking-[0.24em]" aria-label="CASTANIER home">CASTANIER</a>
+
+				<form class="ml-auto hidden max-w-64 flex-1 md:block xl:max-w-72" action="/search" method="get" role="search">
+					<label for="desktop-search" class="sr-only">Search the collection</label>
+					<div class="relative">
+						<input id="desktop-search" name="q" type="search" class="h-12 w-full rounded-[4px] border border-[#D8D0C3] bg-white px-4 pr-12 text-sm outline-none placeholder:text-[#81796E] focus:border-[#283D32] focus:ring-2 focus:ring-[#283D32]/20" placeholder="Search" />
+						<button type="submit" class="absolute inset-y-0 right-0 flex w-12 items-center justify-center rounded-[4px] text-[#283D32] outline-none transition-colors duration-200 hover:text-[#76513D] focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#283D32]" aria-label="Submit search">
+							<svg class="size-5" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+								<circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path>
+							</svg>
+						</button>
+					</div>
+				</form>
+
+				<nav class="ml-auto md:ml-0" aria-label="Account navigation">
+					<ul class="flex items-center gap-1">
+						<li>
+							<a href="/catalog" class="flex size-11 items-center justify-center rounded-[4px] text-[#283D32] outline-none transition-colors duration-200 hover:text-[#76513D] focus-visible:ring-2 focus-visible:ring-[#283D32]" aria-label="Catalog">
+								<svg class="size-4" aria-hidden="true" viewBox="0 0 18 18" fill="currentColor"><rect x="1" y="1" width="6" height="6" rx="0.5"></rect><rect x="11" y="1" width="6" height="6" rx="0.5"></rect><rect x="1" y="11" width="6" height="6" rx="0.5"></rect><rect x="11" y="11" width="6" height="6" rx="0.5"></rect></svg>
+							</a>
+						</li>
+						<li>
+							<a href="/account" class="flex size-11 items-center justify-center rounded-[4px] text-[#283D32] outline-none transition-colors duration-200 hover:text-[#76513D] focus-visible:ring-2 focus-visible:ring-[#283D32]" aria-label="My account">
+								<svg class="size-5" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="3.5"></circle><path d="M5 20a7 7 0 0 1 14 0"></path></svg>
+							</a>
+						</li>
+						<li>
+							<a href="/cart" class="relative flex size-11 items-center justify-center rounded-[4px] text-[#283D32] outline-none transition-colors duration-200 hover:text-[#76513D] focus-visible:ring-2 focus-visible:ring-[#283D32]" aria-label="Shopping bag, 1 item">
+								<svg class="size-5" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5.5 8.5h13l-1 11h-11l-1-11Z"></path><path d="M9 9V7a3 3 0 0 1 6 0v2"></path></svg>
+								<span class="absolute right-0.5 top-0.5 flex size-4 items-center justify-center rounded-full bg-[#76513D] text-[10px] font-medium text-white" aria-hidden="true">1</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main id="main-content" class="mx-auto w-full max-w-7xl flex-1 px-4 py-8 sm:px-6 sm:py-10 lg:px-8 lg:py-14" tabindex="-1">
+			<div class="mx-auto max-w-6xl">
+				<div class="flex flex-wrap items-center justify-between gap-3 border-b border-[#D8D0C3] pb-5">
+					<nav aria-label="Breadcrumb" class="text-xs text-[#81796E]">
+						<ol class="flex items-center gap-2">
+							<li><a href="/cart" class="rounded-[2px] outline-none hover:text-[#283D32] focus-visible:ring-2 focus-visible:ring-[#283D32]">Shopping bag</a></li>
+							<li aria-hidden="true">/</li>
+							<li class="font-medium text-[#283D32]" aria-current="page">Checkout</li>
+						</ol>
+					</nav>
+					<p class="flex items-center gap-2 text-xs text-[#81796E]">
+						<svg class="size-4 text-[#283D32]" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+							<rect x="5" y="10" width="14" height="11" rx="1"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path>
+						</svg>
+						Secure checkout
+					</p>
+				</div>
+
+				<div class="mt-8 grid gap-10 lg:mt-12 lg:grid-cols-[minmax(0,1fr)_360px] lg:gap-16">
+					<section class="min-w-0" aria-labelledby="checkout-title">
+						<p class="text-xs font-medium uppercase tracking-[0.14em] text-[#76513D]">Your order, nearly home</p>
+						<h1 id="checkout-title" class="mt-2 font-['Cormorant_Garamond',serif] text-[40px] font-normal leading-tight text-[#283D32] sm:text-5xl">Checkout</h1>
+
+						<nav class="mt-7 border-y border-[#D8D0C3] py-4" aria-label="Checkout steps">
+							<ol class="grid grid-cols-3 gap-2 sm:gap-4">
+								<li class="flex items-center gap-2 text-xs font-medium text-[#283D32] sm:gap-3 sm:text-sm">
+									<span class="flex size-7 shrink-0 items-center justify-center rounded-full bg-[#283D32] text-[11px] text-white">1</span>
+									<a class="rounded-[2px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32]" href="#personal-details">Personal details</a>
+								</li>
+								<li class="flex items-center gap-2 text-xs font-medium text-[#81796E] sm:gap-3 sm:text-sm">
+									<span class="flex size-7 shrink-0 items-center justify-center rounded-full border border-[#D8D0C3] text-[11px]">2</span>
+									<a class="rounded-[2px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32]" href="#shipping-address">Shipping</a>
+								</li>
+								<li class="flex items-center gap-2 text-xs font-medium text-[#81796E] sm:gap-3 sm:text-sm">
+									<span class="flex size-7 shrink-0 items-center justify-center rounded-full border border-[#D8D0C3] text-[11px]">3</span>
+									<a class="rounded-[2px] outline-none focus-visible:ring-2 focus-visible:ring-[#283D32]" href="#card-payment">Payment</a>
+								</li>
+							</ol>
+						</nav>
+
+						<div class="mt-8 space-y-10">
+							<fieldset id="personal-details" class="min-w-0 scroll-mt-8">
+								<legend class="w-full border-b border-[#D8D0C3] pb-4">
+									<span class="font-['Cormorant_Garamond',serif] text-[28px] leading-tight text-[#283D32]">01 <span class="ml-2">Personal details</span></span>
+								</legend>
+								<div class="mt-5 grid gap-x-5 gap-y-4 sm:grid-cols-2">
+									<div>
+										<label for="first-name" class="mb-2 block text-[13px] font-medium">First name <span aria-hidden="true" class="text-[#76513D]">*</span></label>
+										<input id="first-name" name="given-name" type="text" autocomplete="given-name" required class="h-12 w-full rounded-[4px] border border-[#D8D0C3] bg-white px-3 text-sm outline-none transition focus:border-[#283D32] focus:ring-2 focus:ring-[#283D32]/20" />
+									</div>
+									<div>
+										<label for="last-name" class="mb-2 block text-[13px] font-medium">Last name <span aria-hidden="true" class="text-[#76513D]">*</span></label>
+										<input id="last-name" name="family-name" type="text" autocomplete="family-name" required class="h-12 w-full rounded-[4px] border border-[#D8D0C3] bg-white px-3 text-sm outline-none transition focus:border-[#283D32] focus:ring-2 focus:ring-[#283D32]/20" />
+									</div>
+									<div>
+										<label for="email" class="mb-2 block text-[13px] font-medium">Email address <span aria-hidden="true" class="text-[#76513D]">*</span></label>
+										<input id="email" name="email" type="email" autocomplete="email" required class="h-12 w-full rounded-[4px] border border-[#D8D0C3] bg-white px-3 text-sm outline-none transition focus:border-[#283D32] focus:ring-2 focus:ring-[#283D32]/20" />
+									</div>
+									<div>
+										<label for="phone" class="mb-2 block text-[13px] font-medium">Phone number <span aria-hidden="true" class="text-[#76513D]">*</span></label>
+										<input id="phone" name="tel" type="tel" autocomplete="tel" required class="h-12 w-full rounded-[4px] border border-[#D8D0C3] bg-white px-3 text-sm outline-none transition focus:border-[#283D32] focus:ring-2 focus:ring-[#283D32]/20" />
+									</div>
+								</div>
+							</fieldset>
+
+							<fieldset id="shipping-address" class="min-w-0 scroll-mt-8">
+								<legend class="w-full border-b border-[#D8D0C3] pb-4">
+									<span class="font-['Cormorant_Garamond',serif] text-[28px] leading-tight text-[#283D32]">02 <span class="ml-2">Shipping address</span></span>
+								</legend>
+								<div class="mt-5 grid gap-x-5 gap-y-4 sm:grid-cols-2">
+									<div class="sm:col-span-2">
+										<label for="country" class="mb-2 block text-[13px] font-medium">Country / region <span aria-hidden="true" class="text-[#76513D]">*</span></label>
+										<select id="country" name="country-name" autocomplete="country-name" required class="h-12 w-full rounded-[4px] border border-[#D8D0C3] bg-white px-3 text-sm outline-none focus:border-[#283D32] focus:ring-2 focus:ring-[#283D32]/20">
+											<option value="FR" selected>France</option>
+											<option value="BE">Belgium</option>
+											<option value="DE">Germany</option>
+											<option value="IT">Italy</option>
+											<option value="ES">Spain</option>
+											<option value="GB">United Kingdom</option>
+											<option value="US">United States</option>
+										</select>
+									</div>
+									<div class="sm:col-span-2">
+										<label for="address" class="mb-2 block text-[13px] font-medium">Street address <span aria-hidden="true" class="text-[#76513D]">*</span></label>
+										<input id="address" name="address-line1" type="text" autocomplete="address-line1" required class="h-12 w-full rounded-[4px] border border-[#D8D0C3] bg-white px-3 text-sm outline-none focus:border-[#283D32] focus:ring-2 focus:ring-[#283D32]/20" />
+									</div>
+									<div class="sm:col-span-2">
+										<label for="address-extra" class="mb-2 block text-[13px] font-medium">Apartment, suite, etc. <span class="font-normal text-[#81796E]">(optional)</span></label>
+										<input id="address-extra" name="address-line2" type="text" autocomplete="address-line2" class="h-12 w-full rounded-[4px] border border-[#D8D0C3] bg-white px-3 text-sm outline-none focus:border-[#283D32] focus:ring-2 focus:ring-[#283D32]/20" />
+									</div>
+									<div>
+										<label for="city" class="mb-2 block text-[13px] font-medium">City <span aria-hidden="true" class="text-[#76513D]">*</span></label>
+										<input id="city" name="address-level2" type="text" autocomplete="address-level2" required class="h-12 w-full rounded-[4px] border border-[#D8D0C3] bg-white px-3 text-sm outline-none focus:border-[#283D32] focus:ring-2 focus:ring-[#283D32]/20" />
+									</div>
+									<div>
+										<label for="region" class="mb-2 block text-[13px] font-medium">State / province <span class="font-normal text-[#81796E]">(optional)</span></label>
+										<input id="region" name="address-level1" type="text" autocomplete="address-level1" class="h-12 w-full rounded-[4px] border border-[#D8D0C3] bg-white px-3 text-sm outline-none focus:border-[#283D32] focus:ring-2 focus:ring-[#283D32]/20" />
+									</div>
+									<div>
+										<label for="postal-code" class="mb-2 block text-[13px] font-medium">Postal code <span aria-hidden="true" class="text-[#76513D]">*</span></label>
+										<input id="postal-code" name="postal-code" type="text" autocomplete="postal-code" required class="h-12 w-full rounded-[4px] border border-[#D8D0C3] bg-white px-3 text-sm outline-none focus:border-[#283D32] focus:ring-2 focus:ring-[#283D32]/20" />
+									</div>
+									<div class="flex items-center pt-2 sm:pt-7">
+										<input id="save-address" name="save-address" type="checkbox" class="size-4 rounded-[2px] border-[#D8D0C3] accent-[#283D32] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#283D32]" />
+										<label for="save-address" class="ml-3 text-sm text-[#5D574E]">Save this address for next time</label>
+									</div>
+								</div>
+							</fieldset>
+
+							<fieldset id="card-payment" class="min-w-0 scroll-mt-8">
+								<legend class="w-full border-b border-[#D8D0C3] pb-4">
+									<span class="font-['Cormorant_Garamond',serif] text-[28px] leading-tight text-[#283D32]">03 <span class="ml-2">Card payment</span></span>
+								</legend>
+								<div class="mt-5 rounded-[4px] border border-[#D8D0C3] bg-[#E8DECD]/45 p-4 sm:p-5">
+									<p class="flex items-start gap-3 text-sm leading-6 text-[#5D574E]">
+										<svg class="mt-0.5 size-5 shrink-0 text-[#283D32]" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+											<circle cx="12" cy="12" r="9"></circle><path d="M12 11v5m0-8h.01"></path>
+										</svg>
+										<span><strong class="font-medium text-[#28241F]">Checkout preview.</strong> Payment processing is not connected. Do not enter real card details; this form will not send or store your information.</span>
+									</p>
+								</div>
+								<div class="mt-5 grid gap-x-5 gap-y-4 sm:grid-cols-2">
+									<div class="sm:col-span-2">
+										<label for="card-name" class="mb-2 block text-[13px] font-medium">Name on card <span aria-hidden="true" class="text-[#76513D]">*</span></label>
+										<input id="card-name" name="cc-name" type="text" autocomplete="cc-name" required class="h-12 w-full rounded-[4px] border border-[#D8D0C3] bg-white px-3 text-sm outline-none focus:border-[#283D32] focus:ring-2 focus:ring-[#283D32]/20" />
+									</div>
+									<div class="sm:col-span-2">
+										<label for="card-number" class="mb-2 block text-[13px] font-medium">Card number <span aria-hidden="true" class="text-[#76513D]">*</span></label>
+										<input id="card-number" name="cc-number" type="text" inputmode="numeric" autocomplete="cc-number" maxlength="23" placeholder="1234  5678  9012  3456" required class="h-12 w-full rounded-[4px] border border-[#D8D0C3] bg-white px-3 text-sm outline-none placeholder:text-[#A59D91] focus:border-[#283D32] focus:ring-2 focus:ring-[#283D32]/20" />
+									</div>
+									<div>
+										<label for="expiry" class="mb-2 block text-[13px] font-medium">Expiry date <span aria-hidden="true" class="text-[#76513D]">*</span></label>
+										<input id="expiry" name="cc-exp" type="text" autocomplete="cc-exp" inputmode="numeric" placeholder="MM / YY" required class="h-12 w-full rounded-[4px] border border-[#D8D0C3] bg-white px-3 text-sm outline-none placeholder:text-[#A59D91] focus:border-[#283D32] focus:ring-2 focus:ring-[#283D32]/20" />
+									</div>
+									<div>
+										<label for="security-code" class="mb-2 block text-[13px] font-medium">Security code <span aria-hidden="true" class="text-[#76513D]">*</span></label>
+										<input id="security-code" name="cc-csc" type="password" inputmode="numeric" autocomplete="cc-csc" maxlength="4" required class="h-12 w-full rounded-[4px] border border-[#D8D0C3] bg-white px-3 text-sm outline-none placeholder:text-[#A59D91] focus:border-[#283D32] focus:ring-2 focus:ring-[#283D32]/20" />
+									</div>
+									<div class="sm:col-span-2">
+										<label for="billing-same" class="flex cursor-pointer items-start gap-3">
+											<input id="billing-same" name="billing-same" type="checkbox" checked class="mt-0.5 size-4 rounded-[2px] border-[#D8D0C3] accent-[#283D32] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#283D32]" />
+											<span class="text-sm leading-5 text-[#5D574E]">Billing address is the same as shipping</span>
+										</label>
+									</div>
+								</div>
+							</fieldset>
+
+							<div class="border-t border-[#D8D0C3] pt-6">
+								<button type="button" disabled class="flex h-12 w-full cursor-not-allowed items-center justify-center gap-3 rounded-[4px] bg-[#81796E] px-6 text-[13px] font-medium uppercase tracking-[0.12em] text-white opacity-70">
+									Place order
+									<svg class="size-4" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg>
+								</button>
+								<p class="mt-3 text-center text-xs leading-5 text-[#81796E]">Preview only. Your information will not be submitted and no payment will be made.</p>
+							</div>
+						</div>
+					</section>
+
+					<aside class="order-first h-fit border border-[#D8D0C3] bg-white p-5 sm:p-6 lg:sticky lg:top-8 lg:order-none" aria-labelledby="order-summary-title">
+						<div class="flex items-baseline justify-between gap-4 border-b border-[#D8D0C3] pb-4">
+							<h2 id="order-summary-title" class="font-['Cormorant_Garamond',serif] text-[28px] leading-tight text-[#283D32]">Order summary</h2>
+							<a href="/cart" class="rounded-[2px] text-xs font-medium uppercase tracking-[0.08em] text-[#76513D] underline decoration-[#D8D0C3] underline-offset-4 outline-none hover:text-[#283D32] focus-visible:ring-2 focus-visible:ring-[#283D32]">Edit bag</a>
+						</div>
+
+						<div class="flex gap-4 border-b border-[#D8D0C3] py-5">
+							<div class="relative h-28 w-24 shrink-0 overflow-hidden rounded-[2px] bg-[#E8DECD]">
+								<img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=320&q=80" alt="Cognac leather sandals" class="size-full object-cover" />
+								<span class="absolute -right-1 -top-1 flex size-6 items-center justify-center rounded-full bg-[#283D32] text-xs text-white" aria-label="Quantity: 1">1</span>
+							</div>
+							<div class="flex min-w-0 flex-1 flex-col justify-between py-1">
+								<div>
+									<h3 class="text-sm font-medium leading-5">Leather sandals</h3>
+									<p class="mt-1 text-xs leading-5 text-[#81796E]">Cognac · Size 39</p>
+								</div>
+								<p class="text-sm font-medium">$168.00</p>
+							</div>
+						</div>
+
+						<dl class="space-y-3 border-b border-[#D8D0C3] py-5 text-sm">
+							<div class="flex justify-between gap-4"><dt class="text-[#81796E]">Subtotal</dt><dd>$140.00</dd></div>
+							<div class="flex justify-between gap-4"><dt class="text-[#81796E]">VAT (20%, included)</dt><dd>$28.00</dd></div>
+							<div class="flex justify-between gap-4"><dt class="text-[#81796E]">Shipping</dt><dd class="text-[#283D32]">Free</dd></div>
+						</dl>
+
+						<div class="flex items-baseline justify-between gap-4 pt-5">
+							<p class="text-xs font-medium uppercase tracking-[0.1em]">Total <span class="ml-1 normal-case tracking-normal text-[#81796E]">USD</span></p>
+							<p class="font-['Cormorant_Garamond',serif] text-3xl text-[#283D32]">$168.00</p>
+						</div>
+						<p class="mt-2 text-right text-xs text-[#81796E]">Taxes included</p>
+
+						<div class="mt-6 flex items-start gap-3 border-t border-[#D8D0C3] pt-5 text-xs leading-5 text-[#81796E]">
+							<svg class="mt-0.5 size-4 shrink-0 text-[#283D32]" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7h11v11H3zM14 11h4l3 3v4h-7z"></path><circle cx="7.5" cy="19" r="1.5"></circle><circle cx="17.5" cy="19" r="1.5"></circle></svg>
+							Free delivery on this order. Estimated arrival in 3–5 business days.
+						</div>
+					</aside>
+				</div>
+			</div>
+		</main>
+
+		<footer class="bg-[#283D32] text-[#F8F5EF]">
+			<div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 md:py-16 lg:px-8">
+				<div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+					<div>
+						<a href="/" class="inline-block rounded-[2px] font-['Cormorant_Garamond',serif] text-2xl font-medium tracking-[0.24em] outline-none transition-colors duration-200 hover:text-[#E8DECD] focus-visible:ring-2 focus-visible:ring-[#E8DECD]" aria-label="CASTANIER home">CASTANIER</a>
+						<p class="mt-5 max-w-xs text-sm leading-6 text-[#E8DECD]">Contemporary French clothing shaped by natural elegance and enduring craft.</p>
+					</div>
+
+					<nav aria-labelledby="footer-categories">
+						<h2 id="footer-categories" class="text-xs font-medium uppercase tracking-[0.12em] text-white">Categories</h2>
+						<ul class="mt-5 space-y-3 text-sm text-[#E8DECD]">
+							<li><a href="/footwear" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Footwear</a></li>
+							<li><a href="/shirts" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Shirts</a></li>
+							<li><a href="/pants" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Pants</a></li>
+							<li><a href="/accessories" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Accessories</a></li>
+						</ul>
+					</nav>
+
+					<nav aria-labelledby="footer-legal">
+						<h2 id="footer-legal" class="text-xs font-medium uppercase tracking-[0.12em] text-white">Legal</h2>
+						<ul class="mt-5 space-y-3 text-sm text-[#E8DECD]">
+							<li><a href="/terms" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Terms &amp; conditions</a></li>
+							<li><a href="/privacy" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Privacy policy</a></li>
+							<li><a href="/about" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">About the brand</a></li>
+							<li><a href="/accessibility" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Accessibility</a></li>
+						</ul>
+					</nav>
+
+					<section aria-labelledby="footer-contact">
+						<h2 id="footer-contact" class="text-xs font-medium uppercase tracking-[0.12em] text-white">Contact</h2>
+						<ul class="mt-5 space-y-3 text-sm text-[#E8DECD]">
+							<li><a href="/contact" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Contact us</a></li>
+							<li><a href="/shipping" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Shipping &amp; returns</a></li>
+							<li><a href="/appointments" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Book an appointment</a></li>
+						</ul>
+						<nav class="mt-5" aria-label="Social media">
+							<ul class="flex gap-5 text-xs font-medium uppercase tracking-[0.12em]">
+								<li><a href="/instagram" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Instagram</a></li>
+								<li><a href="/pinterest" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Pinterest</a></li>
+							</ul>
+						</nav>
+					</section>
+				</div>
+
+				<div class="mt-12 border-t border-[#F8F5EF]/20 pt-6 text-xs text-[#E8DECD] md:mt-16">
+					<p>&copy; 2026 CASTANIER. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+
+	</body>
+</html>
