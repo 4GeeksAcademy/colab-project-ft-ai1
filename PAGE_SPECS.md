@@ -62,13 +62,24 @@
 >
 > #### 6) Profile (My account)
 >
-> - Keeps **navbar and footer**; opened from **"My account"** when signed in.
-> - Side menu with sections: **Overview**, **Orders**, **Addresses**, **Payment methods**, **Account details**, **Sign out**.
-> - Shows the **guest account's** sample orders, address, and card.
-> - Full spec: `profile/PROFILE_SPEC.md`.
+> - Keeps **navbar and footer**.
+> - Two-column layout:
+>   - **Left:** account menu
+>   - **Right:** selected section
+> - Sections:
+>   - **Overview**
+>   - **Orders** (order history)
+>   - **Addresses**
+>   - **Payment methods**
+>   - **Account details**
+> - **"Sign out"** button.
+> - Add **2 sample orders** to show the visual behavior.
 >
 > #### 7) Sign in
 >
-> - Keeps **navbar and footer**; opened from **"My account"** when signed out.
-> - Email and password form, plus a **"Sign in to guest profile"** button.
-> - Full spec: `profile/SIGN_IN_SPEC.md`.
+> - Keeps **navbar and footer**.
+> - Sign-in form with:
+>   - Email
+>   - Password
+>   - **"Sign in"** button
+> - **"Sign in to guest profile"** button that opens a sample account.
