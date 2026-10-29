@@ -59,3 +59,33 @@
 > 1. **Personal details**
 > 2. **Shipping address**
 > 3. **Card payment** (card details)
+>
+> #### 6) Profile (My account)
+>
+> - Keeps **navbar and footer**; opened from the navbar's **"My account"** icon (`/account`).
+> - Two-column layout:
+>   - **Left:** account menu (stacks above the content on mobile):
+>     - Overview
+>     - Orders
+>     - Addresses
+>     - Payment methods
+>     - Account details
+>     - Sign out
+>   - **Right:** content of the selected section.
+> - **Overview** (default section):
+>   - Greeting with the customer's name
+>   - Most recent order with its status and a **"View order"** link
+>   - Short descriptions linking to every other section
+> - **Orders:** list of past orders with:
+>   - Order number and date
+>   - Status (processing, shipped, delivered)
+>   - Product thumbnails
+>   - Order total
+>   - **"View details"** button
+> - **Addresses:** saved shipping addresses with **Edit**, **Remove**, and an **"Add address"** button.
+> - **Payment methods:** saved cards shown masked (brand, last 4 digits, expiry) with **Edit** and **Remove**.
+> - **Account details** form:
+>   - First name, last name, email, phone
+>   - Preferred size
+>   - **"Save changes"** button
+> - Add **2 sample orders**, **1 saved address**, and **1 saved card** to show the visual behavior.
