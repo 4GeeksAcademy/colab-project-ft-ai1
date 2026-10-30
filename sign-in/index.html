@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en" class="h-full scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sign in to your CASTANIER account to view your orders, addresses and saved details." />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#283D32" />
+    <title>Sign in | CASTANIER</title>
+
+    <script>
+      try {
+        if (localStorage.getItem("castanier-session")) location.replace("/account");
+      } catch {}
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Sign in | CASTANIER",
+        "description": "Sign in to your CASTANIER account.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "CASTANIER",
+          "description": "A French boutique for contemporary luxury fashion."
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "/" },
+            { "@type": "ListItem", "position": 2, "name": "Sign in", "item": "/sign-in" }
+          ]
+        }
+      }
+    </script>
+  </head>
+
+  <body class="flex min-h-full flex-col overflow-x-hidden bg-[#F8F5EF] font-['Inter',sans-serif] text-[#28241F] antialiased">
+    <a href="#main-content" class="sr-only z-[100] rounded-[4px] bg-[#283D32] px-4 py-3 text-[13px] font-medium uppercase tracking-[0.12em] text-white focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:outline-none focus:ring-2 focus:ring-[#76513D] focus:ring-offset-2">
+      Skip to main content
+    </a>
+
+    <header class="relative z-50 border-b border-[#D8D0C3] bg-[#F8F5EF]" role="banner">
+      <div class="mx-auto flex h-16 max-w-7xl items-center gap-2 px-4 min-[360px]:gap-3 sm:px-6 md:h-20 md:gap-6 lg:px-8">
+        <details class="group md:hidden">
+          <summary class="-ml-2 flex size-11 cursor-pointer list-none items-center justify-center rounded-[4px] text-[#283D32] outline-none transition-colors duration-200 marker:content-none hover:text-[#76513D] focus-visible:ring-2 focus-visible:ring-[#283D32]" aria-label="Open navigation menu">
+            <svg class="size-5 group-open:hidden" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+            <svg class="hidden size-5 group-open:block" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m6 6 12 12M18 6 6 18"></path></svg>
+          </summary>
+          <div class="absolute inset-x-0 top-16 border-b border-[#D8D0C3] bg-[#F8F5EF] px-4 py-6 shadow-[0_12px_24px_rgba(40,36,31,0.06)] sm:px-6">
+            <form action="/search" method="get" role="search">
+              <label for="mobile-search" class="block text-[13px] font-medium uppercase tracking-[0.12em]">Search</label>
+              <div class="relative mt-2">
+                <input id="mobile-search" name="q" type="search" class="h-12 w-full rounded-[4px] border border-[#D8D0C3] bg-white px-4 pr-12 text-sm outline-none placeholder:text-[#81796E] focus:border-[#283D32] focus:ring-2 focus:ring-[#283D32]/20" placeholder="Search the collection" />
+                <button type="submit" class="absolute inset-y-0 right-0 flex w-12 items-center justify-center rounded-[4px] text-[#283D32] outline-none transition-colors duration-200 hover:text-[#76513D] focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#283D32]" aria-label="Submit search">
+                  <svg class="size-5" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </details>
+
+        <a href="/" class="shrink-0 rounded-[2px] font-['Cormorant_Garamond',serif] text-base font-medium leading-none tracking-[0.12em] text-[#283D32] outline-none transition-colors duration-200 hover:text-[#76513D] focus-visible:ring-2 focus-visible:ring-[#283D32] min-[360px]:text-lg min-[360px]:tracking-[0.14em] min-[400px]:text-[22px] min-[400px]:tracking-[0.2em] sm:text-2xl md:tracking-[0.24em]" aria-label="CASTANIER home">CASTANIER</a>
+
+        <form class="ml-auto hidden max-w-64 flex-1 md:block xl:max-w-72" action="/search" method="get" role="search">
+          <label for="desktop-search" class="sr-only">Search the collection</label>
+          <div class="relative">
+            <input id="desktop-search" name="q" type="search" class="h-12 w-full rounded-[4px] border border-[#D8D0C3] bg-white px-4 pr-12 text-sm outline-none placeholder:text-[#81796E] focus:border-[#283D32] focus:ring-2 focus:ring-[#283D32]/20" placeholder="Search" />
+            <button type="submit" class="absolute inset-y-0 right-0 flex w-12 items-center justify-center rounded-[4px] text-[#283D32] outline-none transition-colors duration-200 hover:text-[#76513D] focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#283D32]" aria-label="Submit search">
+              <svg class="size-5" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg>
+            </button>
+          </div>
+        </form>
+
+        <nav class="ml-auto md:ml-0" aria-label="Account navigation">
+          <ul class="flex items-center gap-1">
+            <li><a href="/catalog" class="flex size-11 items-center justify-center rounded-[4px] text-[#283D32] outline-none transition-colors duration-200 hover:text-[#76513D] focus-visible:ring-2 focus-visible:ring-[#283D32]" aria-label="Catalog">
+              <svg class="size-4" aria-hidden="true" viewBox="0 0 18 18" fill="currentColor"><rect x="1" y="1" width="6" height="6" rx="0.5"></rect><rect x="11" y="1" width="6" height="6" rx="0.5"></rect><rect x="1" y="11" width="6" height="6" rx="0.5"></rect><rect x="11" y="11" width="6" height="6" rx="0.5"></rect></svg>
+            </a></li>
+            <li><a href="/account" class="flex size-11 items-center justify-center rounded-[4px] text-[#283D32] outline-none transition-colors duration-200 hover:text-[#76513D] focus-visible:ring-2 focus-visible:ring-[#283D32]" aria-label="My account">
+              <svg class="size-5" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="3.5"></circle><path d="M5 20a7 7 0 0 1 14 0"></path></svg>
+            </a></li>
+            <li><a href="/cart" class="relative flex size-11 items-center justify-center rounded-[4px] text-[#283D32] outline-none transition-colors duration-200 hover:text-[#76513D] focus-visible:ring-2 focus-visible:ring-[#283D32]" aria-label="Shopping bag, 3 items">
+              <svg class="size-5" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5.5 8.5h13l-1 11h-11l-1-11Z"></path><path d="M9 9V7a3 3 0 0 1 6 0v2"></path></svg>
+              <span id="cart-count" class="absolute right-0.5 top-0.5 flex size-4 items-center justify-center rounded-full bg-[#76513D] text-[10px] font-medium text-white" aria-hidden="true">3</span>
+            </a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="flex-1" tabindex="-1">
+      <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-20">
+        <section aria-labelledby="sign-in-heading" class="mx-auto w-full max-w-md rounded-[4px] border border-[#D8D0C3] bg-white p-6 md:p-8">
+          <p class="text-[11px] font-medium uppercase tracking-[0.16em] text-[#76513D]">My account</p>
+          <h1 id="sign-in-heading" class="mt-2 font-['Cormorant_Garamond',serif] text-4xl font-normal leading-tight text-[#283D32] md:text-[56px]">Sign in</h1>
+          <p class="mt-3 text-base leading-7 text-[#81796E]">Welcome back to CASTANIER. Sign in to view your orders, addresses and saved details.</p>
+
+          <div id="sign-in-notice" role="status" aria-live="polite" class="mt-6 empty:hidden rounded-[4px] border border-[#D8D0C3] bg-[#E8DECD] p-4 text-sm leading-6 text-[#28241F]"></div>
+
+          <form id="sign-in-form" class="mt-6 space-y-5" aria-labelledby="sign-in-heading" novalidate>
+            <div>
+              <label for="email" class="block text-[13px] font-medium">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error" class="mt-2 h-12 w-full rounded-[4px] border border-[#D8D0C3] bg-white px-4 text-sm outline-none placeholder:text-[#81796E] focus:border-[#283D32] focus:ring-2 focus:ring-[#283D32]/20 aria-[invalid=true]:border-[#9B3D33]" placeholder="you@example.com" />
+              <p id="email-error" class="mt-2 text-xs text-[#9B3D33] empty:hidden"></p>
+            </div>
+            <div>
+              <label for="password" class="block text-[13px] font-medium">Password</label>
+              <input id="password" name="password" type="password" autocomplete="current-password" class="mt-2 h-12 w-full rounded-[4px] border border-[#D8D0C3] bg-white px-4 text-sm outline-none placeholder:text-[#81796E] focus:border-[#283D32] focus:ring-2 focus:ring-[#283D32]/20" />
+            </div>
+            <button type="submit" class="flex h-12 w-full items-center justify-center rounded-[4px] bg-[#283D32] px-8 text-[13px] font-medium uppercase tracking-[0.12em] text-white outline-none transition-colors duration-200 hover:bg-[#76513D] focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-2">Sign in</button>
+          </form>
+
+          <div class="my-6 flex items-center gap-4" aria-hidden="true">
+            <span class="h-px flex-1 bg-[#D8D0C3]"></span>
+            <span class="text-xs font-medium uppercase tracking-[0.12em] text-[#81796E]">or</span>
+            <span class="h-px flex-1 bg-[#D8D0C3]"></span>
+          </div>
+
+          <button id="guest-button" type="button" aria-describedby="guest-note" class="flex h-12 w-full items-center justify-center rounded-[4px] border border-[#283D32] bg-transparent px-8 text-[13px] font-medium uppercase tracking-[0.12em] text-[#283D32] outline-none transition-colors duration-200 hover:bg-[#283D32] hover:text-white focus-visible:ring-2 focus-visible:ring-[#283D32] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60">Sign in to guest profile</button>
+          <p id="guest-note" class="mt-3 text-sm leading-6 text-[#81796E]">Explore a sample account with past orders, a saved address and a saved card.</p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="bg-[#283D32] text-[#F8F5EF]">
+      <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 md:py-16 lg:px-8">
+        <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+          <div>
+            <a href="/" class="inline-block rounded-[2px] font-['Cormorant_Garamond',serif] text-2xl font-medium tracking-[0.24em] outline-none transition-colors duration-200 hover:text-[#E8DECD] focus-visible:ring-2 focus-visible:ring-[#E8DECD]" aria-label="CASTANIER home">CASTANIER</a>
+            <p class="mt-5 max-w-xs text-sm leading-6 text-[#E8DECD]">Contemporary French clothing shaped by natural elegance and enduring craft.</p>
+          </div>
+
+          <nav aria-labelledby="footer-categories">
+            <h2 id="footer-categories" class="text-xs font-medium uppercase tracking-[0.12em] text-white">Categories</h2>
+            <ul class="mt-5 space-y-3 text-sm text-[#E8DECD]">
+              <li><a href="/footwear" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Footwear</a></li>
+              <li><a href="/shirts" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Shirts</a></li>
+              <li><a href="/pants" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Pants</a></li>
+              <li><a href="/accessories" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Accessories</a></li>
+            </ul>
+          </nav>
+
+          <nav aria-labelledby="footer-legal">
+            <h2 id="footer-legal" class="text-xs font-medium uppercase tracking-[0.12em] text-white">Legal</h2>
+            <ul class="mt-5 space-y-3 text-sm text-[#E8DECD]">
+              <li><a href="/terms" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Terms &amp; conditions</a></li>
+              <li><a href="/privacy" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Privacy policy</a></li>
+              <li><a href="/about" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">About the brand</a></li>
+              <li><a href="/accessibility" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Accessibility</a></li>
+            </ul>
+          </nav>
+
+          <section aria-labelledby="footer-contact">
+            <h2 id="footer-contact" class="text-xs font-medium uppercase tracking-[0.12em] text-white">Contact</h2>
+            <ul class="mt-5 space-y-3 text-sm text-[#E8DECD]">
+              <li><a href="/contact" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Contact us</a></li>
+              <li><a href="/shipping" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Shipping &amp; returns</a></li>
+              <li><a href="/appointments" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Book an appointment</a></li>
+            </ul>
+            <nav class="mt-5" aria-label="Social media">
+              <ul class="flex gap-5 text-xs font-medium uppercase tracking-[0.12em]">
+                <li><a href="/instagram" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Instagram</a></li>
+                <li><a href="/pinterest" class="rounded-[2px] outline-none transition-colors duration-200 hover:text-white focus-visible:ring-2 focus-visible:ring-[#E8DECD]">Pinterest</a></li>
+              </ul>
+            </nav>
+          </section>
+        </div>
+
+        <div class="mt-12 border-t border-[#F8F5EF]/20 pt-6 text-xs text-[#E8DECD] md:mt-16">
+          <p>&copy; 2026 CASTANIER. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const sessionKey = "castanier-session";
+      const profileKey = "castanier-profile";
+      const signInForm = document.querySelector("#sign-in-form");
+      const emailInput = document.querySelector("#email");
+      const emailError = document.querySelector("#email-error");
+      const notice = document.querySelector("#sign-in-notice");
+      const guestButton = document.querySelector("#guest-button");
+      const guestProfile = {
+        id: "guest",
+        firstName: "Camille",
+        lastName: "Martin",
+        email: "guest@castanier.fr",
+        phone: "+33 6 12 34 56 78",
+        preferredSize: "m",
+        addresses: [
+          {
+            id: "addr-1",
+            isDefault: true,
+            fullName: "Camille Martin",
+            line1: "12 rue des Châtaigniers",
+            line2: "",
+            city: "Paris",
+            region: "Île-de-France",
+            postalCode: "75006",
+            country: "France",
+            phone: "+33 6 12 34 56 78",
+          },
+        ],
+        cards: [{ id: "card-1", brand: "Visa", last4: "4242", expiry: "08/28", name: "Camille Martin" }],
+        orders: [
+          {
+            id: "CAS-10421",
+            placedAt: "2026-10-14",
+            status: "delivered",
+            addressId: "addr-1",
+            items: [
+              {
+                id: "etienne-pants",
+                name: "Etienne Pants",
+                category: "Pants",
+                imageUrl: "/assets/products/m-pants-etienne.png",
+                imageAlt: "Men's Etienne pants",
+                variant: "Size M",
+                unitPriceCents: 18900,
+                quantity: 1,
+              },
+              {
+                id: "henri-shirt",
+                name: "Henri Shirt",
+                category: "Shirts",
+                imageUrl: "/assets/products/m-shirt-henri.png",
+                imageAlt: "Men's Henri shirt",
+                variant: "Size M",
+                unitPriceCents: 14500,
+                quantity: 1,
+              },
+            ],
+          },
+          {
+            id: "CAS-10388",
+            placedAt: "2026-09-02",
+            status: "shipped",
+            addressId: "addr-1",
+            items: [
+              {
+                id: "bastien-sweater",
+                name: "Bastien Sweater",
+                category: "Sweaters",
+                imageUrl: "/assets/products/m-sweater-bastien.png",
+                imageAlt: "Men's Bastien sweater",
+                variant: "Size M",
+                unitPriceCents: 12000,
+                quantity: 1,
+              },
+            ],
+          },
+        ],
+      };
+
+      function hasValidProfile() {
+        const storedProfile = localStorage.getItem(profileKey);
+        if (storedProfile === null) return false;
+
+        try {
+          const parsedProfile = JSON.parse(storedProfile);
+          return Boolean(parsedProfile && typeof parsedProfile === "object" && parsedProfile.id === "guest");
+        } catch {
+          return false;
+        }
+      }
+
+      function signInAsGuest() {
+        guestButton.disabled = true;
+        guestButton.textContent = "Signing in…";
+
+        try {
+          if (!hasValidProfile()) localStorage.setItem(profileKey, JSON.stringify(guestProfile));
+          localStorage.setItem(sessionKey, JSON.stringify({ customerId: "guest", signedInAt: new Date().toISOString() }));
+        } catch {
+          notice.textContent = "Your browser is blocking storage, so the guest profile can't be opened.";
+          guestButton.disabled = false;
+          guestButton.textContent = "Sign in to guest profile";
+          return;
+        }
+
+        location.assign("/account");
+      }
+
+      signInForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        notice.textContent = "";
+
+        if (!emailInput.value.trim() || !emailInput.validity.valid) {
+          emailError.textContent = emailInput.value.trim() ? "Enter a valid email address." : "Enter your email address.";
+          emailInput.setAttribute("aria-invalid", "true");
+          emailInput.focus();
+          return;
+        }
+
+        emailError.textContent = "";
+        emailInput.removeAttribute("aria-invalid");
+        const strong = document.createElement("strong");
+        strong.className = "font-medium";
+        strong.textContent = "Sign in to guest profile";
+        notice.replaceChildren("Accounts aren't available in this demo. Use ", strong, " below.");
+        guestButton.focus();
+      });
+
+      emailInput.addEventListener("input", () => {
+        if (!emailInput.hasAttribute("aria-invalid")) return;
+        emailError.textContent = "";
+        emailInput.removeAttribute("aria-invalid");
+      });
+
+      guestButton.addEventListener("click", signInAsGuest);
+
+      function updateBagCount() {
+        const bagCount = document.querySelector("#cart-count");
+        let itemCount = 3;
+
+        try {
+          const storedCart = localStorage.getItem("castanier-cart");
+          if (storedCart !== null) {
+            const parsedCart = JSON.parse(storedCart);
+            itemCount = Array.isArray(parsedCart)
+              ? parsedCart.reduce((sum, item) => {
+                  const quantity = Number(item?.quantity);
+                  return Number.isSafeInteger(quantity) && quantity > 0 ? sum + quantity : sum;
+                }, 0)
+              : 0;
+          }
+        } catch {
+          itemCount = 3;
+        }
+
+        bagCount.textContent = itemCount;
+        bagCount.parentElement.setAttribute("aria-label", `Shopping bag, ${itemCount} items`);
+      }
+
+      updateBagCount();
+    </script>
+  </body>
+</html>
